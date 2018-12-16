@@ -1,0 +1,27 @@
+{% assign data = include.data %}
+<div class="pure-u-1 pure-u-md-1-3">
+  <div class="boxes-table">
+    <div class="boxes-table-free">
+      <div class="boxes-table-header">
+	<h2>{{ include.year }}</h2>
+	<span class="boxes-table-text">
+	  {{ data.checkins }}
+	  <span>beers</span>
+	</span>
+      </div>
+      <ul class="boxes-table-list">
+	<li>Unique beers: {{ data.unique_beers }}</li>
+	<li>Max abv: {{ data.max_abv }}%</li>
+	<li>Avg abv: {{ data.avg_abv }}%</li>
+	<li>Breweries: {{ data.unique_breweries }}</li>
+	<li>Brewery countries: {{ data.brewery_countries }}</li>
+	<li>Venues: {{ data.unique_venues }}</li>
+	<li>Venue countries: {{ data.venue_countries }}</li>
+	<li>Most beers per day: {{ data.most_per_day.checkins }} ({{ data.most_per_day.checkins_date }})</li>
+	<li>Most unique per day: {{ data.most_per_day.unique_beers }} ({{ data.most_per_day.unique_beers_date }})</li>
+	<li>Avg per day: {{ data.beers_per_day }}</li>
+      </ul>
+      <a class="button-choose pure-button" href="/monthly/{{ include.year | prepend: site.baseurl }}/">Monthly</a>
+    </div>
+  </div>
+</div>

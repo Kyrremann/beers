@@ -1,0 +1,12 @@
+title: I might be an alcoholic
+email: kyrremann@gmail.com
+description: A engine that creates more stats based on your untappd-data
+url: "https://allmy.beer"
+
+# Build settings
+permalink: pretty
+encoding: UTF-8
+
+collections:
+  monthly:
+    output: true

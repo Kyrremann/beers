@@ -1,0 +1,431 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #526066;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+/*
+ * -- Misc ..
+ */
+.pull-right {
+    right: 0;
+}
+
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.banner {
+    background: transparent url('/assets/maia-eli-233485-unsplash.jpg') 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/maia-eli-233485-unsplash.jpg', sizingMethod='scale');
+
+    height: 200px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+
+    .banner-head {
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-size: 2em;
+        color: white;
+        font-weight: 500;
+        text-shadow: 0 1px 1px black;
+    }
+
+
+
+/*
+ * -- BOXES TABLE WRAPPER --
+ * This element wraps up all the boxes table elements
+ */
+ .boxes-tables,
+ .information {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+.boxes-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- BOXES TABLE  --
+ * Every boxes table has the .boxes-table class
+ */
+.boxes-table {
+    border: 1px solid #ddd;
+    margin: 0 0.5em 2em;
+    padding: 0 0 3em;
+}
+
+/*
+ * -- BOXES TABLE HEADER COLORS --
+ * Choose a different color based on the type of boxes table.
+ */
+.boxes-table-free .boxes-table-header {
+    background: #519251;
+}
+
+.boxes-table-biz .boxes-table-header {
+    background: #2c4985;
+}
+
+
+.boxes-table-empty .boxes-table-header {
+    background: #eeeeee;
+}
+
+/*
+ * -- BOXES TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+.boxes-table-header {
+    background: #111;
+    color: #fff;
+}
+    .boxes-table-header h2 {
+        margin: 0;
+        padding-top: 2em;
+        font-size: 1em;
+        font-weight: normal;
+
+    }
+
+
+/*
+ * -- BOXES TABLE TEXT --
+ * Styles for the text and the corresponding <span>per month</span>
+ */
+.boxes-table-text {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+    .boxes-table-text span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.2em;
+        padding-bottom: 2em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        *color: #fff;
+    }
+
+
+
+/*
+ * -- BOXES TABLE LIST --
+ * Each boxes table has a <ul> which is denoted by the .boxes-table-list class
+ */
+.boxes-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*
+ * -- BOXES TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each boxes table
+ */
+.boxes-table-list li {
+    padding: 0.8em 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*
+ * -- BOXES TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a boxes table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+/*
+ * -- SORT --
+ */
+.sort:after {
+  display:inline-block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various boxes tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .boxes-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
+
+/*
+ * -- MENU --
+ */
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-button {
+    position: absolute;
+    margin: .5em;
+}
+
+/*
+ * -- FLASH --
+ */
+.flash {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
+    position: relative;
+    transition: opacity 300ms ease-out;
+}
+
+.alert .success {
+    background-color: #43AC6A;
+    color: #FFFFFF;
+}
+
+.alert .error {
+    background-color: #f04124;
+    color: #FFFFFF;
+}
+
+/*
+ * -- RESPONSIVE MENU --
+ */
+.custom-wrapper {
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 13em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+}
+
+/**
+ * Pagination
+ */
+#prev,
+#next {
+  position: fixed;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  padding: .5em;
+  line-height: 1;
+  border-radius: 100px;
+  bottom: 2em;
+  color: #333;
+  @media (max-width: 942px) {
+    position: static;
+    padding: .8em 1em .7em;
+  }
+}
+#prev {
+  left: 40px;
+  @media (max-width: 942px) {
+    float: left;
+  }
+}
+#next {
+  right: 40px;
+  @media (max-width: 942px) {
+    float: right;
+  }
+}
+#prev:active,
+#next:active {
+  border-color: #9b4dca;
+}
+.nav-title {
+  display: none;
+  @media (max-width: 942px) {
+    display: inline;
+  }
+}
+ .nav-title-prev .nav-title-next {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+#prev:hover .nav-title,
+#next:hover .nav-title {
+  display: inline;
+}
