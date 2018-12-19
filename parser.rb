@@ -39,6 +39,8 @@ end
 
 def populate(filename)
   years = {}
+  beers = {}
+  breweries = {}
   file = File.read(filename)
   untappd_json = JSON.parse(file)
 
@@ -120,6 +122,34 @@ def populate(filename)
     years[year]['brewery_countries'].add(check_in['brewery_country']) if check_in['brewery_country']
     years[year]['unique_venues'].add(check_in['venue_name']) if check_in['venue_name']
     years[year]['venue_countries'].add(check_in['venue_country']) if check_in['venue_country']
+
+    bid = check_in['bid']
+    unless beers[bid]
+      beers[bid] = {
+        'beer_name' => check_in['beer_name'],
+        'brewery_name' => check_in['brewery_name'],
+        'beer_type' => check_in['beer_type'],
+        'beer_abv' => check_in['beer_abv'],
+        'beer_ibu' => check_in['beer_ibu'],
+        'rating_score' => check_in['rating_score'],
+        'count' => 0
+      }
+    end
+    beers[bid]['count'] += 1
+
+    brewery_id = check_in['brewery_id']
+    unless breweries[brewery_id]
+      breweries[brewery_id] = {
+        'brewery_name' => check_in['brewery_name'],
+        'brewery_country' => check_in['brewery_country'],
+        'brewery_city' => check_in['brewery_city'],
+        'brewery_state' => check_in['brewery_state'],
+        'count' => 0,
+        'beers' => []
+      }
+    end
+    breweries[brewery_id]['beers'] << check_in['beer_name'] unless breweries[brewery_id]['beers'].include?(check_in['beer_name'])
+    breweries[brewery_id]['count'] += 1
   end
 
   years.each do | year_number, year |
@@ -170,7 +200,17 @@ def populate(filename)
     # TODO: Only write file if new api-version
     create_year_file(year_number)
   end
-  return years
+
+
+  File.open("_data/allmy.json", "w") do |f|
+    f.write(years.to_json)
+  end
+  File.open("_data/beers.json", "w") do |f|
+    f.write(beers.to_json)
+  end
+  File.open("_data/breweries.json", "w") do |f|
+    f.write(breweries.to_json)
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -187,8 +227,5 @@ if __FILE__ == $PROGRAM_NAME
     exit(1)
   end
 
-  data = populate(filename)
-  File.open("_data/allmy.json", "w") do |f|
-    f.write(data.to_json)
-  end
+  populate(filename)
 end
