@@ -2,41 +2,47 @@
 layout: default
 ---
 
-<div class='pure-u-1' id='breweries'>
-  <input class='search' placeholder='Filter'>
-  <table class='pure-table pure-table-striped' style='width: 100%;'>
-    <thead>
-      <tr>
-	<th class='sort' data-sort='brewery'>Brewery</th>
-	<th class='sort' data-sort='beers' style='min-width: 3.4em;'>Beers</th>
-	<th class='sort' data-sort='country'>Country</th>
-      </tr>
-    </thead>
-    <tbody class='list'>
-      {% for value in site.data.breweries %}
-      {% assign brewery = value[1] %}
-      <tr>
-	<td class='brewery'>
-	  {{ brewery.brewery_name }}
-	  <span style="float: right; width: 100%; text-align: right; display: table;">
-	    {% for beer in brewery.beers %}
-	    {{ beer }}
-	    <br />
-	    {% endfor %}
-	  </span>
-	</td>
-	<td valign="top" class='beers'>
-	  {{ brewery.count }}
-	</td>
-	<td valign="top" class='country'>
-	  {{ brewery.brewery_country }}
-	</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="banner">
+  <h1 class="banner-head">I have sampled {{ site.data.breweries | size }} different breweries</h1>
 </div>
+
+<div class="l-content information">
+  <div class='pure-u-1' id='breweries'>
+    <input class='search' placeholder='Filter'>
+    <table class='pure-table pure-table-striped' style='width: 100%;'>
+      <thead>
+	<tr>
+	  <th class='sort' data-sort='brewery'>Brewery</th>
+	  <th class='sort' data-sort='beers' style='min-width: 3.4em;'>Beers</th>
+	  <th class='sort' data-sort='country'>Country</th>
+	</tr>
+      </thead>
+      <tbody class='list'>
+	{% for value in site.data.breweries %}
+	{% assign brewery = value[1] %}
+	<tr>
+	  <td class='brewery'>
+	    {{ brewery.brewery_name }}
+	    <span style="float: right; width: 100%; text-align: right; display: table;">
+	      {% for beer in brewery.beers %}
+	      {{ beer }}
+	      <br />
+	      {% endfor %}
+	    </span>
+	  </td>
+	  <td valign="top" class='beers'>
+	    {{ brewery.count }}
+	  </td>
+	  <td valign="top" class='country'>
+	    {{ brewery.brewery_country }}
+	  </td>
+	</tr>
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
+
 <script>
   let options = {
     valueNames: [ 'brewery', 'beers', 'country' ]

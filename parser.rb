@@ -4,14 +4,15 @@ require 'date'
 require 'json'
 require 'set'
 
-def create_year_file(year)
+def create_year_file(year, checkins, days_drinking, start_date)
   file = File.open("_monthly/#{year}.html", 'w')
   file.write("---
 layout: monthly
 generated: #{Time.now}
+banner: In #{year} I started drinking #{start_date.strftime("%-dth of %B")} and I managed to drink #{checkins} beers, averaging #{(checkins/days_drinking.to_f).round(2)} beers a day
 ---
 
-{% for value in site.data.allmy['#{year}'].months %}
+{% for value in site.data.allmy.years['#{year}'].months %}
 {% cycle 'add row' : '<div class=\"boxes-tables pure-g\">', '', '' %}
   {% assign data = value[1] %}
   {% include monthly.html data=data %}
@@ -38,13 +39,19 @@ def days_drinking(start_date)
 end
 
 def populate(filename)
+  allmy = {
+    'checkins' => 0,
+    'unique_beers' => 0,
+    'days_drinking' => 0,
+    'start_date' => nil,
+  }
   years = {}
   beers = {}
   breweries = {}
   file = File.read(filename)
   untappd_json = JSON.parse(file)
+  allmy['start_date'] = Date.parse(untappd_json[0]['created_at']).to_date
 
-  rows = 0
   untappd_json.each do | check_in |
     checked_in = DateTime.parse(check_in['created_at'])
     year = checked_in.year.to_s
@@ -184,7 +191,7 @@ def populate(filename)
       month['brewery_countries'] = month['brewery_countries'].size
       month['unique_venues'] = month['unique_venues'].size
       month['venue_countries'] = month['venue_countries'].size
-      month['avg_abv'] = (month['avg_abv'] / days_in_month(year_number, month_number).to_f).round(2)
+      month['avg_abv'] = (month['avg_abv'] / month['checkins'].to_f).round(2)
       month['beers_per_day'] = (month['checkins'] / days_in_month(year_number, month_number).to_f).round(2)
     end
 
@@ -197,13 +204,18 @@ def populate(filename)
     year['avg_abv'] = (year['avg_abv'] / year['checkins'].to_f).round(2)
     year['beers_per_day'] = (year['checkins'] / days_drinking(year['start_date']).to_f).round(2)
 
+    allmy['checkins'] += year['checkins']
+    allmy['unique_beers'] += year['unique_beers']
+    allmy['days_drinking'] += days_drinking(year['start_date']).to_f
+
     # TODO: Only write file if new api-version
-    create_year_file(year_number)
+    create_year_file(year_number, year['checkins'], days_drinking(year['start_date']).to_f, year['start_date'])
   end
 
+  allmy['years'] = years
 
   File.open("_data/allmy.json", "w") do |f|
-    f.write(years.to_json)
+    f.write(allmy.to_json)
   end
   File.open("_data/beers.json", "w") do |f|
     f.write(beers.to_json)
