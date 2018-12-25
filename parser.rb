@@ -1,8 +1,44 @@
 #! /bin/ruby
 
+require 'countries'
 require 'date'
 require 'json'
 require 'set'
+
+def find_code(name)
+  c = ISO3166::Country.new(name)&.data
+  c ||= ISO3166::Country.find_country_by_name(name)&.data
+  c ||= ISO3166::Country.find_all_by('translated_names', name).values.first
+  c ||= ISO3166::Country.find_all_by('unofficial_names', name).values.first
+  c&.fetch('alpha3', nil)
+end
+
+def convert_countries(countries)
+  datamapper = {}
+  countries.each do |country, values|
+    c = ISO3166::Country.find_country_by_name(country)
+    unless c
+      case country
+      when "CHINA / PEOPLE'S REPUBLIC OF CHINA"
+        c = ISO3166::Country.find_country_by_name('china')
+      when 'PALESTINIAN TERRITORIES'
+        c = ISO3166::Country.find_country_by_name('palestina')
+      when 'PRINCIPALITY OF MONACO'
+        c = ISO3166::Country.find_country_by_name('monaco')
+      when "WALES", "ENGLAND", "SCOTLAND"
+        c = ISO3166::Country.find_country_by_name('united kingdom')
+      end
+    end
+
+    datamapper[c.alpha3] = {
+      'fillKey' => 'brewery',
+      'breweries' => values['breweries'].size,
+      'checkins' => values['count']
+    }
+  end
+
+  datamapper
+end
 
 def create_year_file(year, checkins, days_drinking, start_date)
   file = File.open("_monthly/#{year}.html", 'w')
@@ -48,6 +84,7 @@ def populate(filename)
   years = {}
   beers = {}
   breweries = {}
+  countries = {}
   file = File.read(filename)
   untappd_json = JSON.parse(file)
   allmy['start_date'] = Date.parse(untappd_json[0]['created_at']).to_date
@@ -157,6 +194,16 @@ def populate(filename)
     end
     breweries[brewery_id]['beers'] << check_in['beer_name'] unless breweries[brewery_id]['beers'].include?(check_in['beer_name'])
     breweries[brewery_id]['count'] += 1
+
+    country = check_in['brewery_country'].upcase
+    unless countries[country]
+      countries[country] = {
+        'breweries' => Set[],
+        'count' => 0
+      }
+    end
+    countries[country]['breweries'].add(check_in['brewery_id'])
+    countries[country]['count'] += 1
   end
 
   years.each do | year_number, year |
@@ -222,6 +269,11 @@ def populate(filename)
   end
   File.open("_data/breweries.json", "w") do |f|
     f.write(breweries.to_json)
+  end
+
+  countries = convert_countries(countries)
+  File.open("_data/countries.json", "w") do |f|
+    f.write(countries.to_json)
   end
 end
 

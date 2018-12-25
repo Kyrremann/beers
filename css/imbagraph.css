@@ -48,22 +48,26 @@ p {
     text-align: center;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/maia-eli-233485-unsplash.jpg', sizingMethod='scale');
-
     height: 200px;
     width: 100%;
     margin-bottom: 3em;
     display: table;
 }
-
-    .banner-head {
-        display: table-cell;
-        vertical-align: middle;
-        margin-bottom: 0;
-        font-size: 2em;
-        color: white;
-        font-weight: 500;
-        text-shadow: 0 1px 1px black;
+@media (max-width: 942px) {
+    .banner {
+	margin: 2.1em 0 2em;
     }
+}
+
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+}
 
 
 
@@ -241,7 +245,6 @@ p {
  * text and add some vertical space between the various boxes tables
  */
 @media(min-width: 767px) {
-
     .banner-head {
         font-size: 4em;
     }
@@ -383,49 +386,61 @@ p {
 /**
  * Pagination
  */
-#prev,
-#next {
-  position: fixed;
-  text-decoration: none;
-  background: #ffffff;
-  border: 1px solid #e8e8e8;
-  padding: .5em;
-  line-height: 1;
-  border-radius: 100px;
-  bottom: 2em;
-  color: #333;
-  @media (max-width: 942px) {
-    position: static;
-    padding: .8em 1em .7em;
-  }
+#prev, #next {
+    position: fixed;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: .5em;
+    line-height: 1;
+    border-radius: 100px;
+    bottom: 2em;
+    color: #333;
 }
+
+@media (max-width: 942px) {
+    #prev, #next {
+	position: static;
+	padding: .8em 1em .7em;
+    }
+}
+
 #prev {
-  left: 40px;
-  @media (max-width: 942px) {
-    float: left;
-  }
+    left: 40px;
 }
+@media (max-width: 942px) {
+    #prev {
+	float: left;
+    }
+}
+
 #next {
-  right: 40px;
-  @media (max-width: 942px) {
-    float: right;
-  }
+    right: 40px;
 }
-#prev:active,
-#next:active {
-  border-color: #9b4dca;
+@media (max-width: 942px) {
+    #next {
+	float: right;
+    }
 }
+
+#prev:active, #next:active {
+    border-color: #9b4dca;
+}
+
 .nav-title {
-  display: none;
-  @media (max-width: 942px) {
+    display: none;
+}
+@media (max-width: 942px) {
+    .nav-title {
+	display: inline;
+    }
+}
+
+.nav-title-prev .nav-title-next {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#prev:hover .nav-title, #next:hover .nav-title {
     display: inline;
-  }
-}
- .nav-title-prev .nav-title-next {
-  margin-left: .5em;
-  margin-right: .5em;
-}
-#prev:hover .nav-title,
-#next:hover .nav-title {
-  display: inline;
 }
