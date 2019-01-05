@@ -7,7 +7,7 @@ layout: default
 </div>
 
 <div class="l-content information">
-  {% for value in site.data.allmy.years %}
+  {% for value in site.data.allmy.years reversed %}
   {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
     {% assign year = value[0] %}
     {% assign data = value[1] %}
