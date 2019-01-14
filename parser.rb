@@ -104,6 +104,7 @@ def populate(filename)
         'brewery_countries' => Set[],
         'unique_venues' => Set[],
         'venue_countries' => Set[],
+        'styles' => Set[],
         'max_abv' => -1.0,
         'avg_abv' => 0,
         'start_date' => checked_in,
@@ -125,6 +126,7 @@ def populate(filename)
         'brewery_countries' => Set[],
         'unique_venues' => Set[],
         'venue_countries' => Set[],
+        'styles' => Set[],
         'max_abv' => -1.0,
         'avg_abv' => -1.0,
         'days' => {},
@@ -153,6 +155,7 @@ def populate(filename)
     years[year]['months'][month]['brewery_countries'].add(check_in['brewery_country']) if check_in['brewery_country']
     years[year]['months'][month]['unique_venues'].add(check_in['venue_name']) if check_in['venue_name']
     years[year]['months'][month]['venue_countries'].add(check_in['venue_country']) if check_in['venue_country']
+    years[year]['months'][month]['styles'].add(check_in['beer_type'])
 
     if years[year]['months'][month]['max_abv'] < check_in['beer_abv'].to_f
       years[year]['months'][month]['max_abv'] = check_in['beer_abv'].to_f
@@ -166,6 +169,7 @@ def populate(filename)
     years[year]['brewery_countries'].add(check_in['brewery_country']) if check_in['brewery_country']
     years[year]['unique_venues'].add(check_in['venue_name']) if check_in['venue_name']
     years[year]['venue_countries'].add(check_in['venue_country']) if check_in['venue_country']
+    years[year]['styles'].add(check_in['beer_type'])
 
     bid = check_in['bid']
     unless beers[bid]
@@ -238,6 +242,7 @@ def populate(filename)
       month['brewery_countries'] = month['brewery_countries'].size
       month['unique_venues'] = month['unique_venues'].size
       month['venue_countries'] = month['venue_countries'].size
+      month['styles'] = month['styles'].size
       month['avg_abv'] = (month['avg_abv'] / month['checkins'].to_f).round(2)
       month['beers_per_day'] = (month['checkins'] / days_in_month(year_number, month_number).to_f).round(2)
     end
@@ -248,6 +253,7 @@ def populate(filename)
     year['brewery_countries'] = year['brewery_countries'].size
     year['unique_venues'] = year['unique_venues'].size
     year['venue_countries'] = year['venue_countries'].size
+    year['styles'] = year['styles'].size
     year['avg_abv'] = (year['avg_abv'] / year['checkins'].to_f).round(2)
     year['beers_per_day'] = (year['checkins'] / days_drinking(year['start_date']).to_f).round(2)
 
