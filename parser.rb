@@ -128,7 +128,7 @@ def populate(filename)
         'venue_countries' => Set[],
         'styles' => Set[],
         'max_abv' => -1.0,
-        'avg_abv' => -1.0,
+        'avg_abv' => 0,
         'days' => {},
         'most_per_day' => {
           'checkins' => 0,
