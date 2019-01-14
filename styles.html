@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="banner">
+  <h1 class="banner-head">I have tried {{ site.data.styles | size }} different styles</h1>
+</div>
+
+<div class="l-content information">
+  {% assign title = site.data.styles %}
+  <div class="pure-u-1" id="styles">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
+      <thead>
+	<tr>
+	  <th class="sort" data-sort="style">Style</th>
+	  <th class="sort" data-sort="count">Count</th>
+	</tr>
+      </thead>
+      <tbody class="list">
+	{% for style in site.data.styles %}
+	<tr>
+	  <td class="style">
+	    {{ style[0] }}
+	  </td>
+	  <td class="count">
+	    {{ style[1] }}
+	  </td>
+	</tr>
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  let options = {
+    valueNames: [ "style", "count" ]
+  };
+
+  let styles = new List("styles", options);
+</script>
