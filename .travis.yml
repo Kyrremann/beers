@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.4.1
 before_install:
-  - bundler install
+  - bundler install --without default jekyll_plugins
 script:
   - ruby parser.rb untappd.json
 after_success:
