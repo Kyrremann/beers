@@ -7,21 +7,21 @@ layout: default
 </div>
 
 <div class="l-content information">
-  <div class='pure-u-1' id='breweries'>
-    <input class='search' placeholder='Filter'>
-    <table class='pure-table pure-table-striped' style='width: 100%;'>
+  <div class="pure-u-1" id="breweries">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
       <thead>
 	<tr>
-	  <th class='sort' data-sort='brewery'>Brewery</th>
-	  <th class='sort' data-sort='beers' style='min-width: 3.4em;'>Beers</th>
-	  <th class='sort' data-sort='country'>Country</th>
+	  <th class="sort" data-sort="brewery">Brewery</th>
+	  <th class="sort" data-sort="beers" style="min-width: 3.4em;">Beers</th>
+	  <th class="sort" data-sort="country">Country</th>
 	</tr>
       </thead>
-      <tbody class='list'>
+      <tbody class="list">
 	{% for value in site.data.breweries %}
 	{% assign brewery = value[1] %}
 	<tr>
-	  <td class='brewery'>
+	  <td class="brewery">
 	    {{ brewery.brewery_name }}
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
 	      {% for beer in brewery.beers %}
@@ -30,10 +30,10 @@ layout: default
 	      {% endfor %}
 	    </span>
 	  </td>
-	  <td valign="top" class='beers'>
+	  <td valign="top" class="beers">
 	    {{ brewery.count }}
 	  </td>
-	  <td valign="top" class='country'>
+	  <td valign="top" class="country">
 	    {{ brewery.brewery_country }}
 	  </td>
 	</tr>
@@ -45,8 +45,8 @@ layout: default
 
 <script>
   let options = {
-    valueNames: [ 'brewery', 'beers', 'country' ]
+    valueNames: [ "brewery", "beers", "country" ]
   };
 
-  let breweries = new List('breweries', options);
+  let breweries = new List("breweries", options);
 </script>

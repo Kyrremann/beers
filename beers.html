@@ -8,35 +8,35 @@ layout: default
 
 <div class="l-content information">
   {% assign title = site.data.beers %}
-  <div class='pure-u-1' id='beers'>
-    <input class='search' placeholder='Filter'>
-    <table class='pure-table pure-table-striped' style='width: 100%;'>
+  <div class="pure-u-1" id="beers">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
       <thead>
 	<tr>
-	  <th class='sort' data-sort='beer'>Beer</th>
-	  <th class='sort' data-sort='abv' style='min-width: 2.7em;'>ABV</th>
-	  <th class='sort' data-sort='ibu' style='min-width: 2.7em;'>IBU</th>
-	  <th class='sort' data-sort='checkins' style='min-width: 5.1em;'>Checkins</th>
-	  <th class='sort' data-sort='brewery'>Brewery</th>
+	  <th class="sort" data-sort="beer">Beer</th>
+	  <th class="sort" data-sort="abv" style="min-width: 2.7em;">ABV</th>
+	  <th class="sort" data-sort="ibu" style="min-width: 2.7em;">IBU</th>
+	  <th class="sort" data-sort="checkins" style="min-width: 5.1em;">Checkins</th>
+	  <th class="sort" data-sort="brewery">Brewery</th>
 	</tr>
       </thead>
-      <tbody class='list'>
+      <tbody class="list">
 	{% for value in site.data.beers %}
 	{% assign beer = value[1] %}
 	<tr>
-	  <td class='beer'>
+	  <td class="beer">
 	    {{ beer.beer_name }}
 	  </td>
-	  <td class='abv'>
+	  <td class="abv">
 	    {{ beer.beer_abv }}
 	  </td>
-	  <td class='ibu'>
+	  <td class="ibu">
 	    {{ beer.beer_ibu }}
 	  </td>
-	  <td class='checkins'>
+	  <td class="checkins">
 	    {{ beer.count }}
 	  </td>
-	  <td class='brewery'>
+	  <td class="brewery">
 	    {{ beer.brewery_name }}
 	  </td>
 	</tr>
@@ -48,8 +48,8 @@ layout: default
 
 <script>
   let options = {
-    valueNames: [ 'beer', 'abv', 'ibu', 'checkins', 'brewery' ]
+    valueNames: [ "beer", "abv", "ibu", "checkins", "brewery" ]
   };
 
-  let beers = new List('beers', options);
+  let beers = new List("beers", options);
 </script>
