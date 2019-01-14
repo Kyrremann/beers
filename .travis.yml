@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.4.1
+before_install:
+  - bundler install
+script:
+  - ruby parser.rb untappd.json
+after_success:
+  - .travis/push.sh
+env:
+  global:
+    secure: a9Q6OJXVIcvyl/eEWn5xf/qYr77x1ulGM58ZC+ZvCjNhCALrESQ7g6vlAacnEdUDhodEX5WeUbulJFJbe2cQDf2MnMyexuSKrsIb5X43h+66MUjvi5ET04gf64fO/Ty007GQsPDRNs0SnODOgWqQ9iDmjvhi72UpTuDZtQR5NMG6xe2XdaLtRyEo0R3mrpu+nZBLKzJPhoOg0RheO1WcKMrvVfL+SHGLPHUnsHZDZ3jcM1oZamNQ/ij5U2NXLT6ijbZaAFcRR/DvHRDWJAHQXn3MlEM+8s3JUn3PA9VY72e7BDxHxrRJeRAzEuV0fUuZxOA0kqpy1tRK6fhBe0ChR7iBfcX+GJ+d8OytxJumdPnk9g443VWlU28ifLLrWxDalTstL/QG+WLelzxHS4m5+w1rB5ktR14iyBzOKSbZtU+G0CAgi4cs6Z2Ow6ZLs9SMEb2kaumF4FaJWCjwgvWeuwnM6fBDz2cguX/TL1cjUH2st2nc8KB0Cd4iOI4Ottx+Fmfw1TkSCUpdlQ1jxnO+MAJnEbe4YG/e06IBD0ZDHClFLDgqgBXXfKirJraICFv7rRMTGfCoyIHM26uXvoYUiOYA4TrqZGd2gYLBE8AYq+Xott+9dPiGJ4oNpd+abNdLlHX72FBYFo8u9xMBygC4fAbIVnb0karERVH1pSTc1A4=
