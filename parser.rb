@@ -85,7 +85,7 @@ def populate(filename)
   beers = {}
   breweries = {}
   countries = {}
-  styles = {}
+  tasted_styles = {}
   file = File.read(filename)
   untappd_json = JSON.parse(file)
   allmy['start_date'] = Date.parse(untappd_json[0]['created_at']).to_date
@@ -210,10 +210,10 @@ def populate(filename)
     countries[country]['breweries'].add(check_in['brewery_id'])
     countries[country]['count'] += 1
 
-    unless styles[check_in['beer_type']]
-      styles[check_in['beer_type']] = 0
+    unless tasted_styles[check_in['beer_type']]
+      tasted_styles[check_in['beer_type']] = 0
     end
-    styles[check_in['beer_type']] += 1
+    tasted_styles[check_in['beer_type']] += 1
   end
 
   years.each do | year_number, year |
@@ -287,7 +287,14 @@ def populate(filename)
     f.write(countries.to_json)
   end
   File.open("_data/styles.json", "w") do |f|
-    f.write(styles.to_json)
+    f.write(tasted_styles.to_json)
+  end
+  json = File.read('_data/all_styles.json')
+  all_styles = JSON.parse(json).to_a
+  tasted_styles = tasted_styles.keys
+  missing_styles = all_styles - tasted_styles | tasted_styles - all_styles
+  File.open("_data/missing_styles.json", "w") do |f|
+    f.write(missing_styles.to_json)
   end
 end
 
