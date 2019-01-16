@@ -1,39 +1,27 @@
 allmy.beer
 ==========
 
-A simpler version of [imbagraph](https://github.com/Kyrremann/imbagraph). Support only one user, and comes with a generator for creating the data.
+Allmy.beer uses your exported data from Untappd and generate even more statistics than what Untappd offer. For example can you see beers per year, and month, plus it avarages several interesting facts, such as abv and number of consumed beers.
+
+Some key features:
+
+* Beers per year and month
+* Average beer per month and year
+* Easily see beers, breweries, and styles you have tried
 
 
-## Getting stareted
+## Getting started
 
-> To be documented
+It's pretty simple to get started using this application, as it's all hosted by Github, and I use Travis to generate the data and files needed.
+
+1. Fork this repo
+2. Change `e-mail` and `url` in `_config.yml` 
+   * If you don't have a domain, use `<username>.github.io/allmy.beer` as `url`
+3. Follow this [gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea#guided-tutorial) to set up [Travis](https://travis-ci.org/)
+4. Upload your own `untappd.json`
+5. Travis will automatically build and upload your new data
 
 
-## Data structure
+## Data structures
 
-```json
-{
-  "2016": {
-    "months": {
-      "3": {
-        "name": "March",
-        "checkins": 16,
-        "unique_beers": 12,
-        "unique_breweries": 9,
-        "brewery_countries": 7,
-        "unique_venues": 3,
-        "venue_countries": 1,
-        "max_abv": 8.0,
-        "avg_abv": 2.38,
-        "most_per_day": {
-          "checkins": 3,
-          "checkins_date": "2016-03-29",
-          "unique_beers": 3,
-          "unique_beers_date": "2016-03-29"
-        },
-        "beers_per_day": 0.52
-      }
-    }
-  }
-}
-```
+Easily seen in the `_data`-folder. There are one file for each feature.
