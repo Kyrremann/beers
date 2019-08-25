@@ -4,6 +4,7 @@ rvm:
 before_install:
   - gem update --system
   - gem install bundler
+  - bundle update --bundler
   - bundler install --without default jekyll_plugins
 script:
   - ruby parser.rb untappd.json
