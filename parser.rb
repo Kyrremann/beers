@@ -44,7 +44,6 @@ def create_year_file(year, checkins, days_drinking, start_date)
   file = File.open("_monthly/#{year}.html", 'w')
   file.write("---
 layout: monthly
-generated: #{Time.now}
 banner: In #{year} I started drinking #{start_date.strftime("%-dth of %B")} and I managed to drink #{checkins} beers, averaging #{(checkins/days_drinking.to_f).round(2)} beers a day
 ---
 
