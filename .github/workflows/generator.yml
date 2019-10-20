@@ -1,0 +1,20 @@
+name: Genereate data
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up environment
+      run: |
+        gem update --system
+        gem install bundler
+        bundle update --bundler
+        bundle install --without default jekyll_plugins
+    - name: Run parser
+      run: ruby parser.rb untappd.json
+    - name: Commit back
+      run: |
+        git add -A .
+        git commit -m "Genereated new data"
+        git push
