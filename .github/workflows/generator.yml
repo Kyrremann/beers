@@ -10,14 +10,13 @@ jobs:
         ruby-version: '2.x'
     - name: Set up environment
       run: |
-        gem update --system
-        gem install bundler --update --force
-        bundle update --bundler
         bundle install --without default jekyll_plugins
     - name: Run parser
       run: ruby parser.rb untappd.json
     - name: Commit back
       run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "Github Action"
         git add -A .
         git commit -m "Genereated new data"
         git push
