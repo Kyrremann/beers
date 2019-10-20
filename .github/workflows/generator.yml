@@ -8,9 +8,8 @@ jobs:
     - uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.x'
-    - name: Set up environment
-      run: |
-        bundle install --without default jekyll_plugins
+    - name: Install gems
+      run: gem install countries
     - name: Run parser
       run: ruby parser.rb untappd.json
     - name: Commit back
