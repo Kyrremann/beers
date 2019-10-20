@@ -1,5 +1,8 @@
 name: Genereate data
-on: [push]
+on:
+  push:
+    paths:
+      - untappd.json
 jobs:
   build:
     runs-on: ubuntu-latest
