@@ -12,14 +12,13 @@ Some key features:
 
 ## Getting started
 
-It's pretty simple to get started using this application, as it's all hosted by Github, and I use Travis to generate the data and files needed.
+It's pretty simple to get started using this application, as it's all hosted by Github. I use Github Actions to generate the data based on the `untappd.json` file.
 
 1. Fork this repo
 2. Change `e-mail` and `url` in `_config.yml` 
    * If you don't have a domain, use `<username>.github.io/allmy.beer` as `url`
-3. Follow this [gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea#guided-tutorial) to set up [Travis](https://travis-ci.org/)
-4. Upload your own `untappd.json`
-5. Travis will automatically build and upload your new data
+3. Upload your own `untappd.json`
+4. Github Action will automatically build and upload your new data
 
 
 ## Data structures
