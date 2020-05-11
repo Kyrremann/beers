@@ -1,3 +1,5 @@
+---
+---
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -44,10 +46,10 @@ p {
  */
 
 .banner {
-    background: transparent url('/assets/maia-eli-233485-unsplash.jpg') 0 0 no-repeat fixed;
+    background: transparent url({{ '/assets/maia-eli-233485-unsplash.jpg' | prepend: site.baseurl }}) 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/maia-eli-233485-unsplash.jpg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src={{ '/assets/maia-eli-233485-unsplash.jpg' | prepend: site.baseurl }}, sizingMethod='scale');
     height: 200px;
     width: 100%;
     margin-bottom: 3em;

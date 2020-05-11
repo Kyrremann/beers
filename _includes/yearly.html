@@ -22,7 +22,7 @@
 	<li>Most unique per day: {{ data.most_per_day.unique_beers }} ({{ data.most_per_day.unique_beers_date }})</li>
 	<li>Avg per day: {{ data.beers_per_day }}</li>
       </ul>
-      <a class="button-choose pure-button" href="/monthly/{{ include.year | prepend: site.baseurl }}/">Monthly</a>
+      <a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ include.year }}/">Monthly</a>
     </div>
   </div>
 </div>
