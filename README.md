@@ -21,6 +21,13 @@ It's pretty simple to get started using this application, as it's all hosted by 
 4. Github Action will automatically build and upload your new data
 
 
+### Regex for getting styles from Unttapd.com
+
+1. Go to https://untappd.com/beer/top_rated
+2. Use this regex to easily get a formatted line of styles
+   `<option value="\d+" data-value-slug="(\w|-)+">([A-Za-z\-\s\(\)/&èéäö]+)</option>`
+
+
 ## Data structures
 
 Easily seen in the `_data`-folder. There are one file for each feature.
