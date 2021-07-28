@@ -16,7 +16,7 @@ It's pretty simple to get started using this application, as it's all hosted by 
 
 1. Fork this repo
 2. Change `e-mail` and `url` in `_config.yml` 
-   * If you don't have a domain, use `<username>.github.io/allmy.beer` as `url`
+   * If you don't have a domain, use `<username>.github.io/beers` as `url`
 3. Upload your own `untappd.json`
 4. Github Action will automatically build and upload your new data
 
