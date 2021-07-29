@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - untappd.json
+      - parser.rb
 jobs:
   build:
     runs-on: ubuntu-latest
