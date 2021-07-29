@@ -25,8 +25,10 @@ def convert_countries(countries)
         c = ISO3166::Country.find_country_by_name('palestina')
       when 'PRINCIPALITY OF MONACO'
         c = ISO3166::Country.find_country_by_name('monaco')
-      when "WALES", "ENGLAND", "SCOTLAND"
+      when "WALES", "ENGLAND", "SCOTLAND", "NORTHERN IRELAND"
         c = ISO3166::Country.find_country_by_name('united kingdom')
+      else
+        p "ISO3166::Country does not support #{country}"
       end
     end
 
