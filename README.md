@@ -12,7 +12,6 @@ Some key features:
 
 
 ## Getting started
-
 It's pretty simple to get started using this application, as it's all hosted by Github. I use Github Actions to generate the data based on the `untappd.json` file.
 
 1. Fork this repo
@@ -21,14 +20,18 @@ It's pretty simple to get started using this application, as it's all hosted by 
 3. Upload your own `untappd.json` data
 4. Github Action will automatically build and upload your new data
 
+### Update your fork
+Check out [Github doc](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/merging-an-upstream-repository-into-your-fork) for an easy guide for how to update your fork.
+
+## Development
+It's running on Ruby and Jekyll.
 
 ### Regex for getting styles from Untappd.com
+Untappd sometimes changes their list of styles, so it needs to be kept updated.
 
 1. Go to https://untappd.com/beer/top_rated
 2. Use this regex to easily get a formatted line of styles
    `<option value="\d+" data-value-slug="(\w|-)+">([A-Za-z\-\s\(\)/&èéäö]+)</option>`
 
-
 ## Data structures
-
 Easily seen in the `_data`-folder. There are one file for each feature.
