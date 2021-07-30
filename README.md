@@ -1,7 +1,8 @@
-allmy.beer
-==========
+Beers
+=====
 
-Allmy.beer uses your exported data from Untappd and generate even more statistics than what Untappd offer. For example can you see beers per year, and month, plus it avarages several interesting facts, such as abv and number of consumed beers.
+Beers uses your exported data from Untappd and generate even more statistics than what Untappd offer.
+For example can you see beers per year, and month, plus it averages several interesting facts, such as abv and number of consumed beers.
 
 Some key features:
 
@@ -15,13 +16,13 @@ Some key features:
 It's pretty simple to get started using this application, as it's all hosted by Github. I use Github Actions to generate the data based on the `untappd.json` file.
 
 1. Fork this repo
-2. Change `e-mail` and `url` in `_config.yml` 
-   * If you don't have a domain, use `<username>.github.io/beers` as `url`
-3. Upload your own `untappd.json`
+2. Change `e-mail` in `_config.yml` 
+   * The site will be aviable at `<username>.github.io/beers`
+3. Upload your own `untappd.json` data
 4. Github Action will automatically build and upload your new data
 
 
-### Regex for getting styles from Unttapd.com
+### Regex for getting styles from Untappd.com
 
 1. Go to https://untappd.com/beer/top_rated
 2. Use this regex to easily get a formatted line of styles
