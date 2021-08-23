@@ -23,7 +23,11 @@ layout: default
     geographyConfig: {
       highlightBorderColor: '#bada55',
       popupTemplate: function(geography, data) {
-        return '<div class="hoverinfo">' + geography.properties.name + '<br />Breweries: ' +  data.breweries + '<br />Checkins: ' + data.checkins
+        if (data) {
+          return '<div class="hoverinfo">' + geography.properties.name + '<br />Breweries: ' +  data.breweries + '<br />Checkins: ' + data.checkins + '</div>'
+        } else {
+          return '<div class="hoverinfo">' + geography.properties.name + '</div>'
+        }
       },
       highlightBorderWidth: 1
     },
