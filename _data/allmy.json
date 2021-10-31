@@ -1,1 +1,1717 @@
-{"checkins":2775,"unique_beers":2454,"days_drinking":2060.0,"start_date":"2016-03-01","years":{"2016":{"months":{"3":{"name":"March","checkins":16,"unique_beers":12,"unique_breweries":9,"brewery_countries":7,"unique_venues":3,"venue_countries":1,"styles":7,"max_abv":5.5,"avg_abv":4.17,"most_per_day":{"checkins":3,"checkins_date":"2016-03-29","unique_beers":3,"unique_beers_date":"2016-03-29"},"beers_per_day":0.52},"4":{"name":"April","checkins":7,"unique_beers":7,"unique_breweries":7,"brewery_countries":3,"unique_venues":1,"venue_countries":1,"styles":6,"max_abv":10.0,"avg_abv":5.37,"most_per_day":{"checkins":3,"checkins_date":"2016-04-10","unique_beers":3,"unique_beers_date":"2016-04-10"},"beers_per_day":0.23},"5":{"name":"May","checkins":6,"unique_beers":6,"unique_breweries":3,"brewery_countries":3,"unique_venues":3,"venue_countries":2,"styles":3,"max_abv":5.0,"avg_abv":4.62,"most_per_day":{"checkins":3,"checkins_date":"2016-05-27","unique_beers":3,"unique_beers_date":"2016-05-27"},"beers_per_day":0.19},"6":{"name":"June","checkins":12,"unique_beers":12,"unique_breweries":12,"brewery_countries":7,"unique_venues":5,"venue_countries":1,"styles":9,"max_abv":7.5,"avg_abv":5.88,"most_per_day":{"checkins":2,"checkins_date":"2016-06-04","unique_beers":2,"unique_beers_date":"2016-06-04"},"beers_per_day":0.4},"7":{"name":"July","checkins":40,"unique_beers":37,"unique_breweries":29,"brewery_countries":11,"unique_venues":6,"venue_countries":1,"styles":24,"max_abv":9.5,"avg_abv":5.5,"most_per_day":{"checkins":5,"checkins_date":"2016-07-09","unique_beers":5,"unique_beers_date":"2016-07-09"},"beers_per_day":1.29},"8":{"name":"August","checkins":11,"unique_beers":11,"unique_breweries":10,"brewery_countries":6,"unique_venues":3,"venue_countries":1,"styles":10,"max_abv":11.3,"avg_abv":5.44,"most_per_day":{"checkins":2,"checkins_date":"2016-08-02","unique_beers":2,"unique_beers_date":"2016-08-02"},"beers_per_day":0.35},"9":{"name":"September","checkins":31,"unique_beers":31,"unique_breweries":28,"brewery_countries":11,"unique_venues":8,"venue_countries":1,"styles":23,"max_abv":9.0,"avg_abv":4.92,"most_per_day":{"checkins":4,"checkins_date":"2016-09-03","unique_beers":4,"unique_beers_date":"2016-09-03"},"beers_per_day":1.03},"10":{"name":"October","checkins":35,"unique_beers":35,"unique_breweries":25,"brewery_countries":11,"unique_venues":12,"venue_countries":1,"styles":27,"max_abv":13.3,"avg_abv":6.95,"most_per_day":{"checkins":9,"checkins_date":"2016-10-19","unique_beers":9,"unique_beers_date":"2016-10-19"},"beers_per_day":1.13},"11":{"name":"November","checkins":20,"unique_beers":20,"unique_breweries":19,"brewery_countries":7,"unique_venues":4,"venue_countries":1,"styles":15,"max_abv":9.0,"avg_abv":5.74,"most_per_day":{"checkins":3,"checkins_date":"2016-11-16","unique_beers":3,"unique_beers_date":"2016-11-16"},"beers_per_day":0.67},"12":{"name":"December","checkins":52,"unique_beers":50,"unique_breweries":36,"brewery_countries":9,"unique_venues":5,"venue_countries":1,"styles":34,"max_abv":13.0,"avg_abv":5.61,"most_per_day":{"checkins":6,"checkins_date":"2016-12-23","unique_beers":6,"unique_beers_date":"2016-12-23"},"beers_per_day":1.68}},"checkins":230,"unique_beers":200,"unique_breweries":120,"brewery_countries":23,"unique_venues":44,"venue_countries":3,"styles":75,"max_abv":13.3,"avg_abv":5.59,"start_date":"2016-03-01T19:06:42+00:00","most_per_day":{"checkins":9,"checkins_date":"2016-10-19","unique_beers":9,"unique_beers_date":"2016-10-19"},"beers_per_day":0.75},"2017":{"months":{"1":{"name":"January","checkins":20,"unique_beers":20,"unique_breweries":20,"brewery_countries":6,"unique_venues":3,"venue_countries":1,"styles":14,"max_abv":10.0,"avg_abv":6.01,"most_per_day":{"checkins":3,"checkins_date":"2017-01-06","unique_beers":3,"unique_beers_date":"2017-01-06"},"beers_per_day":0.65},"2":{"name":"February","checkins":38,"unique_beers":37,"unique_breweries":34,"brewery_countries":12,"unique_venues":7,"venue_countries":1,"styles":25,"max_abv":10.0,"avg_abv":5.24,"most_per_day":{"checkins":6,"checkins_date":"2017-02-19","unique_beers":6,"unique_beers_date":"2017-02-19"},"beers_per_day":1.36},"3":{"name":"March","checkins":35,"unique_beers":35,"unique_breweries":29,"brewery_countries":15,"unique_venues":8,"venue_countries":1,"styles":26,"max_abv":9.0,"avg_abv":5.67,"most_per_day":{"checkins":5,"checkins_date":"2017-03-24","unique_beers":5,"unique_beers_date":"2017-03-24"},"beers_per_day":1.13},"4":{"name":"April","checkins":45,"unique_beers":45,"unique_breweries":38,"brewery_countries":9,"unique_venues":5,"venue_countries":3,"styles":28,"max_abv":11.0,"avg_abv":5.76,"most_per_day":{"checkins":6,"checkins_date":"2017-04-22","unique_beers":6,"unique_beers_date":"2017-04-22"},"beers_per_day":1.5},"5":{"name":"May","checkins":51,"unique_beers":50,"unique_breweries":39,"brewery_countries":11,"unique_venues":17,"venue_countries":2,"styles":32,"max_abv":9.5,"avg_abv":5.87,"most_per_day":{"checkins":7,"checkins_date":"2017-05-20","unique_beers":7,"unique_beers_date":"2017-05-20"},"beers_per_day":1.65},"6":{"name":"June","checkins":55,"unique_beers":55,"unique_breweries":45,"brewery_countries":13,"unique_venues":17,"venue_countries":1,"styles":38,"max_abv":12.5,"avg_abv":5.51,"most_per_day":{"checkins":6,"checkins_date":"2017-06-22","unique_beers":6,"unique_beers_date":"2017-06-22"},"beers_per_day":1.83},"7":{"name":"July","checkins":69,"unique_beers":69,"unique_breweries":45,"brewery_countries":12,"unique_venues":13,"venue_countries":2,"styles":47,"max_abv":12.0,"avg_abv":5.83,"most_per_day":{"checkins":7,"checkins_date":"2017-07-28","unique_beers":7,"unique_beers_date":"2017-07-28"},"beers_per_day":2.23},"8":{"name":"August","checkins":54,"unique_beers":54,"unique_breweries":41,"brewery_countries":14,"unique_venues":19,"venue_countries":1,"styles":39,"max_abv":13.0,"avg_abv":6.64,"most_per_day":{"checkins":5,"checkins_date":"2017-08-19","unique_beers":5,"unique_beers_date":"2017-08-19"},"beers_per_day":1.74},"9":{"name":"September","checkins":62,"unique_beers":62,"unique_breweries":54,"brewery_countries":10,"unique_venues":24,"venue_countries":2,"styles":44,"max_abv":15.0,"avg_abv":6.47,"most_per_day":{"checkins":10,"checkins_date":"2017-09-24","unique_beers":10,"unique_beers_date":"2017-09-24"},"beers_per_day":2.07},"10":{"name":"October","checkins":47,"unique_beers":47,"unique_breweries":38,"brewery_countries":12,"unique_venues":16,"venue_countries":2,"styles":36,"max_abv":12.0,"avg_abv":6.57,"most_per_day":{"checkins":7,"checkins_date":"2017-10-04","unique_beers":7,"unique_beers_date":"2017-10-04"},"beers_per_day":1.52},"11":{"name":"November","checkins":35,"unique_beers":35,"unique_breweries":29,"brewery_countries":8,"unique_venues":10,"venue_countries":1,"styles":30,"max_abv":15.0,"avg_abv":7.2,"most_per_day":{"checkins":13,"checkins_date":"2017-11-11","unique_beers":13,"unique_beers_date":"2017-11-11"},"beers_per_day":1.17},"12":{"name":"December","checkins":75,"unique_beers":74,"unique_breweries":52,"brewery_countries":10,"unique_venues":18,"venue_countries":1,"styles":42,"max_abv":13.0,"avg_abv":6.65,"most_per_day":{"checkins":9,"checkins_date":"2017-12-23","unique_beers":9,"unique_beers_date":"2017-12-23"},"beers_per_day":2.42}},"checkins":586,"unique_beers":565,"unique_breweries":264,"brewery_countries":31,"unique_venues":114,"venue_countries":5,"styles":127,"max_abv":15.0,"avg_abv":6.15,"start_date":"2017-01-06T19:22:13+00:00","most_per_day":{"checkins":13,"checkins_date":"2017-11-11","unique_beers":13,"unique_beers_date":"2017-11-11"},"beers_per_day":1.63},"2018":{"months":{"1":{"name":"January","checkins":62,"unique_beers":62,"unique_breweries":48,"brewery_countries":10,"unique_venues":19,"venue_countries":1,"styles":41,"max_abv":14.0,"avg_abv":7.41,"most_per_day":{"checkins":6,"checkins_date":"2018-01-13","unique_beers":6,"unique_beers_date":"2018-01-13"},"beers_per_day":2.0},"2":{"name":"February","checkins":45,"unique_beers":44,"unique_breweries":33,"brewery_countries":10,"unique_venues":19,"venue_countries":1,"styles":28,"max_abv":16.0,"avg_abv":6.55,"most_per_day":{"checkins":6,"checkins_date":"2018-02-28","unique_beers":6,"unique_beers_date":"2018-02-28"},"beers_per_day":1.61},"3":{"name":"March","checkins":53,"unique_beers":51,"unique_breweries":41,"brewery_countries":14,"unique_venues":20,"venue_countries":2,"styles":37,"max_abv":16.0,"avg_abv":6.31,"most_per_day":{"checkins":6,"checkins_date":"2018-03-09","unique_beers":6,"unique_beers_date":"2018-03-09"},"beers_per_day":1.71},"4":{"name":"April","checkins":78,"unique_beers":73,"unique_breweries":54,"brewery_countries":13,"unique_venues":27,"venue_countries":2,"styles":42,"max_abv":13.8,"avg_abv":6.71,"most_per_day":{"checkins":9,"checkins_date":"2018-04-21","unique_beers":9,"unique_beers_date":"2018-04-21"},"beers_per_day":2.6},"5":{"name":"May","checkins":74,"unique_beers":71,"unique_breweries":52,"brewery_countries":13,"unique_venues":25,"venue_countries":2,"styles":47,"max_abv":17.5,"avg_abv":5.87,"most_per_day":{"checkins":8,"checkins_date":"2018-05-04","unique_beers":8,"unique_beers_date":"2018-05-04"},"beers_per_day":2.39},"6":{"name":"June","checkins":50,"unique_beers":47,"unique_breweries":39,"brewery_countries":10,"unique_venues":12,"venue_countries":1,"styles":37,"max_abv":14.2,"avg_abv":5.48,"most_per_day":{"checkins":7,"checkins_date":"2018-06-09","unique_beers":7,"unique_beers_date":"2018-06-09"},"beers_per_day":1.67},"7":{"name":"July","checkins":57,"unique_beers":56,"unique_breweries":46,"brewery_countries":9,"unique_venues":13,"venue_countries":2,"styles":34,"max_abv":11.3,"avg_abv":5.47,"most_per_day":{"checkins":6,"checkins_date":"2018-07-13","unique_beers":6,"unique_beers_date":"2018-07-13"},"beers_per_day":1.84},"8":{"name":"August","checkins":53,"unique_beers":52,"unique_breweries":42,"brewery_countries":12,"unique_venues":17,"venue_countries":3,"styles":33,"max_abv":12.5,"avg_abv":6.51,"most_per_day":{"checkins":8,"checkins_date":"2018-08-23","unique_beers":7,"unique_beers_date":"2018-08-10"},"beers_per_day":1.71},"9":{"name":"September","checkins":35,"unique_beers":31,"unique_breweries":27,"brewery_countries":11,"unique_venues":15,"venue_countries":1,"styles":22,"max_abv":14.0,"avg_abv":5.95,"most_per_day":{"checkins":5,"checkins_date":"2018-09-03","unique_beers":5,"unique_beers_date":"2018-09-03"},"beers_per_day":1.17},"10":{"name":"October","checkins":77,"unique_beers":77,"unique_breweries":54,"brewery_countries":16,"unique_venues":28,"venue_countries":2,"styles":46,"max_abv":12.5,"avg_abv":5.91,"most_per_day":{"checkins":9,"checkins_date":"2018-10-31","unique_beers":9,"unique_beers_date":"2018-10-31"},"beers_per_day":2.48},"11":{"name":"November","checkins":56,"unique_beers":53,"unique_breweries":38,"brewery_countries":13,"unique_venues":13,"venue_countries":1,"styles":33,"max_abv":15.1,"avg_abv":6.82,"most_per_day":{"checkins":8,"checkins_date":"2018-11-14","unique_beers":8,"unique_beers_date":"2018-11-14"},"beers_per_day":1.87},"12":{"name":"December","checkins":65,"unique_beers":59,"unique_breweries":40,"brewery_countries":7,"unique_venues":6,"venue_countries":1,"styles":42,"max_abv":15.0,"avg_abv":6.5,"most_per_day":{"checkins":14,"checkins_date":"2018-12-23","unique_beers":14,"unique_beers_date":"2018-12-23"},"beers_per_day":2.1}},"checkins":705,"unique_beers":630,"unique_breweries":281,"brewery_countries":32,"unique_venues":150,"venue_countries":6,"styles":133,"max_abv":17.5,"avg_abv":6.31,"start_date":"2018-01-02T17:46:15+00:00","most_per_day":{"checkins":14,"checkins_date":"2018-12-23","unique_beers":14,"unique_beers_date":"2018-12-23"},"beers_per_day":1.94},"2019":{"months":{"1":{"name":"January","checkins":51,"unique_beers":50,"unique_breweries":38,"brewery_countries":11,"unique_venues":11,"venue_countries":1,"styles":35,"max_abv":19.3,"avg_abv":6.72,"most_per_day":{"checkins":9,"checkins_date":"2019-01-26","unique_beers":9,"unique_beers_date":"2019-01-26"},"beers_per_day":1.65},"2":{"name":"February","checkins":30,"unique_beers":28,"unique_breweries":22,"brewery_countries":10,"unique_venues":6,"venue_countries":1,"styles":25,"max_abv":12.0,"avg_abv":6.39,"most_per_day":{"checkins":6,"checkins_date":"2019-02-07","unique_beers":6,"unique_beers_date":"2019-02-07"},"beers_per_day":1.07},"3":{"name":"March","checkins":78,"unique_beers":75,"unique_breweries":46,"brewery_countries":14,"unique_venues":17,"venue_countries":1,"styles":41,"max_abv":16.0,"avg_abv":6.37,"most_per_day":{"checkins":17,"checkins_date":"2019-03-02","unique_beers":16,"unique_beers_date":"2019-03-02"},"beers_per_day":2.52},"4":{"name":"April","checkins":61,"unique_beers":61,"unique_breweries":43,"brewery_countries":13,"unique_venues":14,"venue_countries":2,"styles":32,"max_abv":14.0,"avg_abv":6.31,"most_per_day":{"checkins":8,"checkins_date":"2019-04-13","unique_beers":8,"unique_beers_date":"2019-04-13"},"beers_per_day":2.03},"5":{"name":"May","checkins":43,"unique_beers":43,"unique_breweries":26,"brewery_countries":8,"unique_venues":10,"venue_countries":2,"styles":33,"max_abv":13.2,"avg_abv":5.52,"most_per_day":{"checkins":6,"checkins_date":"2019-05-10","unique_beers":6,"unique_beers_date":"2019-05-10"},"beers_per_day":1.39},"6":{"name":"June","checkins":10,"unique_beers":10,"unique_breweries":9,"brewery_countries":6,"unique_venues":6,"venue_countries":1,"styles":8,"max_abv":7.7,"avg_abv":4.79,"most_per_day":{"checkins":2,"checkins_date":"2019-06-20","unique_beers":2,"unique_beers_date":"2019-06-20"},"beers_per_day":0.33},"7":{"name":"July","checkins":41,"unique_beers":40,"unique_breweries":25,"brewery_countries":11,"unique_venues":11,"venue_countries":2,"styles":27,"max_abv":11.5,"avg_abv":5.89,"most_per_day":{"checkins":5,"checkins_date":"2019-07-17","unique_beers":5,"unique_beers_date":"2019-07-17"},"beers_per_day":1.32},"8":{"name":"August","checkins":60,"unique_beers":55,"unique_breweries":34,"brewery_countries":9,"unique_venues":13,"venue_countries":1,"styles":32,"max_abv":13.0,"avg_abv":7.15,"most_per_day":{"checkins":13,"checkins_date":"2019-08-23","unique_beers":13,"unique_beers_date":"2019-08-23"},"beers_per_day":1.94},"9":{"name":"September","checkins":52,"unique_beers":49,"unique_breweries":37,"brewery_countries":12,"unique_venues":14,"venue_countries":1,"styles":34,"max_abv":12.5,"avg_abv":5.53,"most_per_day":{"checkins":7,"checkins_date":"2019-09-04","unique_beers":7,"unique_beers_date":"2019-09-04"},"beers_per_day":1.73},"10":{"name":"October","checkins":45,"unique_beers":41,"unique_breweries":29,"brewery_countries":11,"unique_venues":9,"venue_countries":1,"styles":23,"max_abv":10.0,"avg_abv":5.46,"most_per_day":{"checkins":7,"checkins_date":"2019-10-16","unique_beers":7,"unique_beers_date":"2019-10-16"},"beers_per_day":1.45},"11":{"name":"November","checkins":47,"unique_beers":44,"unique_breweries":31,"brewery_countries":7,"unique_venues":15,"venue_countries":2,"styles":35,"max_abv":12.3,"avg_abv":6.21,"most_per_day":{"checkins":10,"checkins_date":"2019-11-02","unique_beers":10,"unique_beers_date":"2019-11-02"},"beers_per_day":1.57},"12":{"name":"December","checkins":33,"unique_beers":30,"unique_breweries":28,"brewery_countries":9,"unique_venues":10,"venue_countries":1,"styles":24,"max_abv":12.0,"avg_abv":7.3,"most_per_day":{"checkins":5,"checkins_date":"2019-12-23","unique_beers":5,"unique_beers_date":"2019-12-23"},"beers_per_day":1.06}},"checkins":551,"unique_beers":482,"unique_breweries":225,"brewery_countries":26,"unique_venues":95,"venue_countries":5,"styles":123,"max_abv":19.3,"avg_abv":6.24,"start_date":"2019-01-01T00:39:10+00:00","most_per_day":{"checkins":17,"checkins_date":"2019-03-02","unique_beers":16,"unique_beers_date":"2019-03-02"},"beers_per_day":1.51},"2020":{"months":{"1":{"name":"January","checkins":22,"unique_beers":19,"unique_breweries":13,"brewery_countries":5,"unique_venues":6,"venue_countries":1,"styles":14,"max_abv":16.0,"avg_abv":6.88,"most_per_day":{"checkins":4,"checkins_date":"2020-01-23","unique_beers":3,"unique_beers_date":"2020-01-04"},"beers_per_day":0.71},"2":{"name":"February","checkins":22,"unique_beers":21,"unique_breweries":14,"brewery_countries":6,"unique_venues":7,"venue_countries":1,"styles":17,"max_abv":13.0,"avg_abv":4.2,"most_per_day":{"checkins":3,"checkins_date":"2020-02-08","unique_beers":3,"unique_beers_date":"2020-02-08"},"beers_per_day":0.76},"3":{"name":"March","checkins":25,"unique_beers":24,"unique_breweries":20,"brewery_countries":8,"unique_venues":6,"venue_countries":2,"styles":23,"max_abv":19.0,"avg_abv":6.71,"most_per_day":{"checkins":3,"checkins_date":"2020-03-09","unique_beers":3,"unique_beers_date":"2020-03-09"},"beers_per_day":0.81},"4":{"name":"April","checkins":21,"unique_beers":18,"unique_breweries":12,"brewery_countries":3,"unique_venues":2,"venue_countries":2,"styles":13,"max_abv":19.0,"avg_abv":6.32,"most_per_day":{"checkins":3,"checkins_date":"2020-04-10","unique_beers":3,"unique_beers_date":"2020-04-10"},"beers_per_day":0.7},"5":{"name":"May","checkins":30,"unique_beers":25,"unique_breweries":23,"brewery_countries":10,"unique_venues":4,"venue_countries":2,"styles":18,"max_abv":15.8,"avg_abv":6.62,"most_per_day":{"checkins":5,"checkins_date":"2020-05-19","unique_beers":5,"unique_beers_date":"2020-05-19"},"beers_per_day":0.97},"6":{"name":"June","checkins":31,"unique_beers":31,"unique_breweries":28,"brewery_countries":9,"unique_venues":9,"venue_countries":2,"styles":18,"max_abv":11.0,"avg_abv":4.73,"most_per_day":{"checkins":4,"checkins_date":"2020-06-05","unique_beers":4,"unique_beers_date":"2020-06-05"},"beers_per_day":1.03},"7":{"name":"July","checkins":33,"unique_beers":29,"unique_breweries":24,"brewery_countries":8,"unique_venues":10,"venue_countries":2,"styles":24,"max_abv":13.0,"avg_abv":6.42,"most_per_day":{"checkins":4,"checkins_date":"2020-07-26","unique_beers":4,"unique_beers_date":"2020-07-26"},"beers_per_day":1.06},"8":{"name":"August","checkins":34,"unique_beers":25,"unique_breweries":17,"brewery_countries":7,"unique_venues":6,"venue_countries":2,"styles":20,"max_abv":13.0,"avg_abv":5.63,"most_per_day":{"checkins":4,"checkins_date":"2020-08-15","unique_beers":3,"unique_beers_date":"2020-08-06"},"beers_per_day":1.1},"9":{"name":"September","checkins":31,"unique_beers":28,"unique_breweries":19,"brewery_countries":7,"unique_venues":6,"venue_countries":2,"styles":20,"max_abv":13.0,"avg_abv":6.39,"most_per_day":{"checkins":4,"checkins_date":"2020-09-11","unique_beers":4,"unique_beers_date":"2020-09-11"},"beers_per_day":1.03},"10":{"name":"October","checkins":36,"unique_beers":33,"unique_breweries":25,"brewery_countries":12,"unique_venues":6,"venue_countries":2,"styles":24,"max_abv":14.0,"avg_abv":6.49,"most_per_day":{"checkins":8,"checkins_date":"2020-10-01","unique_beers":8,"unique_beers_date":"2020-10-01"},"beers_per_day":1.16},"11":{"name":"November","checkins":20,"unique_beers":18,"unique_breweries":16,"brewery_countries":6,"unique_venues":1,"venue_countries":1,"styles":13,"max_abv":13.0,"avg_abv":6.2,"most_per_day":{"checkins":3,"checkins_date":"2020-11-28","unique_beers":3,"unique_beers_date":"2020-11-28"},"beers_per_day":0.67},"12":{"name":"December","checkins":68,"unique_beers":64,"unique_breweries":40,"brewery_countries":9,"unique_venues":1,"venue_countries":1,"styles":39,"max_abv":13.5,"avg_abv":7.01,"most_per_day":{"checkins":9,"checkins_date":"2020-12-23","unique_beers":9,"unique_beers_date":"2020-12-23"},"beers_per_day":2.19}},"checkins":373,"unique_beers":291,"unique_breweries":137,"brewery_countries":20,"unique_venues":38,"venue_countries":2,"styles":103,"max_abv":19.0,"avg_abv":6.24,"start_date":"2020-01-01T00:35:16+00:00","most_per_day":{"checkins":9,"checkins_date":"2020-12-23","unique_beers":9,"unique_beers_date":"2020-12-23"},"beers_per_day":1.02},"2021":{"months":{"1":{"name":"January","checkins":38,"unique_beers":37,"unique_breweries":30,"brewery_countries":5,"unique_venues":4,"venue_countries":2,"styles":29,"max_abv":15.0,"avg_abv":7.91,"most_per_day":{"checkins":4,"checkins_date":"2021-01-15","unique_beers":4,"unique_beers_date":"2021-01-15"},"beers_per_day":1.23},"2":{"name":"February","checkins":23,"unique_beers":21,"unique_breweries":19,"brewery_countries":11,"unique_venues":3,"venue_countries":2,"styles":21,"max_abv":19.0,"avg_abv":6.21,"most_per_day":{"checkins":2,"checkins_date":"2021-02-05","unique_beers":2,"unique_beers_date":"2021-02-05"},"beers_per_day":0.82},"3":{"name":"March","checkins":23,"unique_beers":22,"unique_breweries":20,"brewery_countries":6,"unique_venues":1,"venue_countries":1,"styles":19,"max_abv":19.0,"avg_abv":5.95,"most_per_day":{"checkins":2,"checkins_date":"2021-03-03","unique_beers":2,"unique_beers_date":"2021-03-03"},"beers_per_day":0.74},"4":{"name":"April","checkins":26,"unique_beers":25,"unique_breweries":23,"brewery_countries":6,"unique_venues":2,"venue_countries":2,"styles":20,"max_abv":12.0,"avg_abv":6.3,"most_per_day":{"checkins":6,"checkins_date":"2021-04-30","unique_beers":6,"unique_beers_date":"2021-04-30"},"beers_per_day":0.87},"5":{"name":"May","checkins":26,"unique_beers":25,"unique_breweries":21,"brewery_countries":5,"unique_venues":3,"venue_countries":2,"styles":15,"max_abv":14.0,"avg_abv":5.57,"most_per_day":{"checkins":3,"checkins_date":"2021-05-17","unique_beers":3,"unique_beers_date":"2021-05-17"},"beers_per_day":0.84},"6":{"name":"June","checkins":37,"unique_beers":35,"unique_breweries":31,"brewery_countries":10,"unique_venues":11,"venue_countries":2,"styles":25,"max_abv":40.0,"avg_abv":6.51,"most_per_day":{"checkins":5,"checkins_date":"2021-06-16","unique_beers":5,"unique_beers_date":"2021-06-16"},"beers_per_day":1.23},"7":{"name":"July","checkins":46,"unique_beers":43,"unique_breweries":34,"brewery_countries":8,"unique_venues":11,"venue_countries":2,"styles":30,"max_abv":16.8,"avg_abv":5.55,"most_per_day":{"checkins":7,"checkins_date":"2021-07-09","unique_beers":7,"unique_beers_date":"2021-07-09"},"beers_per_day":1.48},"8":{"name":"August","checkins":48,"unique_beers":46,"unique_breweries":32,"brewery_countries":9,"unique_venues":12,"venue_countries":2,"styles":30,"max_abv":14.0,"avg_abv":6.22,"most_per_day":{"checkins":8,"checkins_date":"2021-08-27","unique_beers":8,"unique_beers_date":"2021-08-27"},"beers_per_day":1.55},"9":{"name":"September","checkins":30,"unique_beers":29,"unique_breweries":25,"brewery_countries":7,"unique_venues":5,"venue_countries":2,"styles":24,"max_abv":14.2,"avg_abv":6.27,"most_per_day":{"checkins":4,"checkins_date":"2021-09-06","unique_beers":4,"unique_beers_date":"2021-09-06"},"beers_per_day":1.0},"10":{"name":"October","checkins":33,"unique_beers":33,"unique_breweries":32,"brewery_countries":10,"unique_venues":14,"venue_countries":2,"styles":27,"max_abv":15.2,"avg_abv":5.92,"most_per_day":{"checkins":4,"checkins_date":"2021-10-09","unique_beers":4,"unique_beers_date":"2021-10-09"},"beers_per_day":1.06}},"checkins":330,"unique_beers":286,"unique_breweries":157,"brewery_countries":21,"unique_venues":34,"venue_countries":2,"styles":106,"max_abv":40.0,"avg_abv":6.26,"start_date":"2021-01-01T00:57:52+00:00","most_per_day":{"checkins":8,"checkins_date":"2021-08-27","unique_beers":8,"unique_beers_date":"2021-08-27"},"beers_per_day":1.1}}}
+{
+    "checkins": 2775,
+    "unique_beers": 2163,
+    "start_date": "2016-03-01",
+    "days_drinking": 2128,
+    "beers_per_day": 1.3,
+    "years": [
+        {
+            "checkins": 736,
+            "unique_breweries": 61,
+            "brewery_countries": 17,
+            "unique_venues": 44,
+            "venue_countries": 3,
+            "unique_beers": 94,
+            "max_abv": 13.3,
+            "avg_abv": 6.96,
+            "styles": 51,
+            "start_date": "2016-03-01",
+            "year": "2016",
+            "months": [
+                {
+                    "checkins": 19,
+                    "unique_breweries": 5,
+                    "brewery_countries": 4,
+                    "unique_venues": 3,
+                    "venue_countries": 1,
+                    "unique_beers": 5,
+                    "max_abv": 5.5,
+                    "avg_abv": 4.11,
+                    "styles": 4,
+                    "start_date": "2016-03-01",
+                    "month": "03",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2016-03-29"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2016-03-29"
+                    },
+                    "beers_per_day": 0.61
+                },
+                {
+                    "checkins": 9,
+                    "unique_breweries": 3,
+                    "brewery_countries": 1,
+                    "unique_venues": 1,
+                    "venue_countries": 1,
+                    "unique_beers": 3,
+                    "max_abv": 10,
+                    "avg_abv": 6.97,
+                    "styles": 3,
+                    "start_date": "2016-04-10",
+                    "month": "04",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2016-04-10"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2016-04-10"
+                    },
+                    "beers_per_day": 0.3
+                },
+                {
+                    "checkins": 11,
+                    "unique_breweries": 2,
+                    "brewery_countries": 2,
+                    "unique_venues": 3,
+                    "venue_countries": 2,
+                    "unique_beers": 5,
+                    "max_abv": 4.7,
+                    "avg_abv": 4.52,
+                    "styles": 2,
+                    "start_date": "2016-05-15",
+                    "month": "05",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2016-05-27"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2016-05-27"
+                    },
+                    "beers_per_day": 0.35
+                },
+                {
+                    "checkins": 18,
+                    "unique_breweries": 6,
+                    "brewery_countries": 5,
+                    "unique_venues": 5,
+                    "venue_countries": 1,
+                    "unique_beers": 6,
+                    "max_abv": 6.9,
+                    "avg_abv": 5.48,
+                    "styles": 6,
+                    "start_date": "2016-06-01",
+                    "month": "06",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 2,
+                        "date": "2016-06-04"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 2,
+                        "date": "2016-06-04"
+                    },
+                    "beers_per_day": 0.6
+                },
+                {
+                    "checkins": 160,
+                    "unique_breweries": 12,
+                    "brewery_countries": 7,
+                    "unique_venues": 6,
+                    "venue_countries": 1,
+                    "unique_beers": 16,
+                    "max_abv": 9.5,
+                    "avg_abv": 6.61,
+                    "styles": 13,
+                    "start_date": "2016-07-01",
+                    "month": "07",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2016-07-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2016-07-09"
+                    },
+                    "beers_per_day": 5.16
+                },
+                {
+                    "checkins": 3,
+                    "unique_breweries": 3,
+                    "brewery_countries": 3,
+                    "unique_venues": 3,
+                    "venue_countries": 1,
+                    "unique_beers": 3,
+                    "max_abv": 4.8,
+                    "avg_abv": 4.5,
+                    "styles": 3,
+                    "start_date": "2016-08-03",
+                    "month": "08",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 2,
+                        "date": "2016-08-02"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 2,
+                        "date": "2016-08-02"
+                    },
+                    "beers_per_day": 0.1
+                },
+                {
+                    "checkins": 80,
+                    "unique_breweries": 14,
+                    "brewery_countries": 6,
+                    "unique_venues": 8,
+                    "venue_countries": 1,
+                    "unique_beers": 16,
+                    "max_abv": 9,
+                    "avg_abv": 5.62,
+                    "styles": 15,
+                    "start_date": "2016-09-03",
+                    "month": "09",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2016-09-03"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2016-09-03"
+                    },
+                    "beers_per_day": 2.67
+                },
+                {
+                    "checkins": 226,
+                    "unique_breweries": 13,
+                    "brewery_countries": 9,
+                    "unique_venues": 12,
+                    "venue_countries": 1,
+                    "unique_beers": 22,
+                    "max_abv": 13.3,
+                    "avg_abv": 8.42,
+                    "styles": 21,
+                    "start_date": "2016-10-01",
+                    "month": "10",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2016-10-19"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2016-10-19"
+                    },
+                    "beers_per_day": 7.29
+                },
+                {
+                    "checkins": 74,
+                    "unique_breweries": 6,
+                    "brewery_countries": 4,
+                    "unique_venues": 4,
+                    "venue_countries": 1,
+                    "unique_beers": 7,
+                    "max_abv": 9,
+                    "avg_abv": 7.41,
+                    "styles": 5,
+                    "start_date": "2016-11-14",
+                    "month": "11",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2016-11-16"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2016-11-16"
+                    },
+                    "beers_per_day": 2.47
+                },
+                {
+                    "checkins": 136,
+                    "unique_breweries": 12,
+                    "brewery_countries": 4,
+                    "unique_venues": 5,
+                    "venue_countries": 1,
+                    "unique_beers": 16,
+                    "max_abv": 10,
+                    "avg_abv": 6.36,
+                    "styles": 13,
+                    "start_date": "2016-12-14",
+                    "month": "12",
+                    "year": "2016",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2016-12-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2016-12-23"
+                    },
+                    "beers_per_day": 4.39
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 9,
+                "date": "2016-10-19"
+            },
+            "most_unique_beers_per_day": {
+                "count": 9,
+                "date": "2016-10-19"
+            },
+            "beers_per_day": 2.01
+        },
+        {
+            "checkins": 4897,
+            "unique_breweries": 182,
+            "brewery_countries": 26,
+            "unique_venues": 114,
+            "venue_countries": 5,
+            "unique_beers": 320,
+            "max_abv": 15,
+            "avg_abv": 6.96,
+            "styles": 102,
+            "start_date": "2017-01-06",
+            "year": "2017",
+            "months": [
+                {
+                    "checkins": 18,
+                    "unique_breweries": 5,
+                    "brewery_countries": 3,
+                    "unique_venues": 3,
+                    "venue_countries": 1,
+                    "unique_beers": 5,
+                    "max_abv": 6.2,
+                    "avg_abv": 4.86,
+                    "styles": 5,
+                    "start_date": "2017-01-06",
+                    "month": "01",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2017-01-06"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2017-01-06"
+                    },
+                    "beers_per_day": 0.58
+                },
+                {
+                    "checkins": 63,
+                    "unique_breweries": 15,
+                    "brewery_countries": 8,
+                    "unique_venues": 7,
+                    "venue_countries": 1,
+                    "unique_beers": 15,
+                    "max_abv": 10,
+                    "avg_abv": 5.6,
+                    "styles": 12,
+                    "start_date": "2017-02-09",
+                    "month": "02",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2017-02-19"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2017-02-19"
+                    },
+                    "beers_per_day": 2.25
+                },
+                {
+                    "checkins": 87,
+                    "unique_breweries": 11,
+                    "brewery_countries": 8,
+                    "unique_venues": 8,
+                    "venue_countries": 1,
+                    "unique_beers": 13,
+                    "max_abv": 8.5,
+                    "avg_abv": 5.61,
+                    "styles": 10,
+                    "start_date": "2017-03-01",
+                    "month": "03",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2017-03-24"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2017-03-24"
+                    },
+                    "beers_per_day": 2.81
+                },
+                {
+                    "checkins": 24,
+                    "unique_breweries": 7,
+                    "brewery_countries": 2,
+                    "unique_venues": 5,
+                    "venue_countries": 3,
+                    "unique_beers": 9,
+                    "max_abv": 9,
+                    "avg_abv": 5.92,
+                    "styles": 8,
+                    "start_date": "2017-04-12",
+                    "month": "04",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2017-04-22"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2017-04-22"
+                    },
+                    "beers_per_day": 0.8
+                },
+                {
+                    "checkins": 371,
+                    "unique_breweries": 28,
+                    "brewery_countries": 9,
+                    "unique_venues": 17,
+                    "venue_countries": 2,
+                    "unique_beers": 37,
+                    "max_abv": 9,
+                    "avg_abv": 5.57,
+                    "styles": 26,
+                    "start_date": "2017-05-01",
+                    "month": "05",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2017-05-20"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2017-05-20"
+                    },
+                    "beers_per_day": 11.97
+                },
+                {
+                    "checkins": 623,
+                    "unique_breweries": 32,
+                    "brewery_countries": 11,
+                    "unique_venues": 17,
+                    "venue_countries": 1,
+                    "unique_beers": 37,
+                    "max_abv": 11.5,
+                    "avg_abv": 5.49,
+                    "styles": 31,
+                    "start_date": "2017-06-01",
+                    "month": "06",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2017-06-22"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2017-06-22"
+                    },
+                    "beers_per_day": 20.77
+                },
+                {
+                    "checkins": 550,
+                    "unique_breweries": 23,
+                    "brewery_countries": 8,
+                    "unique_venues": 13,
+                    "venue_countries": 2,
+                    "unique_beers": 33,
+                    "max_abv": 12,
+                    "avg_abv": 5.96,
+                    "styles": 27,
+                    "start_date": "2017-07-01",
+                    "month": "07",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2017-07-28"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2017-07-28"
+                    },
+                    "beers_per_day": 17.74
+                },
+                {
+                    "checkins": 604,
+                    "unique_breweries": 30,
+                    "brewery_countries": 14,
+                    "unique_venues": 19,
+                    "venue_countries": 1,
+                    "unique_beers": 37,
+                    "max_abv": 13,
+                    "avg_abv": 7.57,
+                    "styles": 29,
+                    "start_date": "2017-08-01",
+                    "month": "08",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2017-08-19"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2017-08-19"
+                    },
+                    "beers_per_day": 19.48
+                },
+                {
+                    "checkins": 1025,
+                    "unique_breweries": 44,
+                    "brewery_countries": 9,
+                    "unique_venues": 24,
+                    "venue_countries": 2,
+                    "unique_beers": 50,
+                    "max_abv": 15,
+                    "avg_abv": 7.97,
+                    "styles": 36,
+                    "start_date": "2017-09-01",
+                    "month": "09",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 10,
+                        "date": "2017-09-24"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 10,
+                        "date": "2017-09-24"
+                    },
+                    "beers_per_day": 34.17
+                },
+                {
+                    "checkins": 334,
+                    "unique_breweries": 20,
+                    "brewery_countries": 8,
+                    "unique_venues": 16,
+                    "venue_countries": 2,
+                    "unique_beers": 24,
+                    "max_abv": 11,
+                    "avg_abv": 7.65,
+                    "styles": 19,
+                    "start_date": "2017-10-03",
+                    "month": "10",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2017-10-04"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2017-10-04"
+                    },
+                    "beers_per_day": 10.77
+                },
+                {
+                    "checkins": 442,
+                    "unique_breweries": 22,
+                    "brewery_countries": 7,
+                    "unique_venues": 10,
+                    "venue_countries": 1,
+                    "unique_beers": 27,
+                    "max_abv": 15,
+                    "avg_abv": 6.64,
+                    "styles": 23,
+                    "start_date": "2017-11-01",
+                    "month": "11",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 13,
+                        "date": "2017-11-11"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 13,
+                        "date": "2017-11-11"
+                    },
+                    "beers_per_day": 14.73
+                },
+                {
+                    "checkins": 756,
+                    "unique_breweries": 30,
+                    "brewery_countries": 9,
+                    "unique_venues": 18,
+                    "venue_countries": 1,
+                    "unique_beers": 40,
+                    "max_abv": 13,
+                    "avg_abv": 7.98,
+                    "styles": 26,
+                    "start_date": "2017-12-01",
+                    "month": "12",
+                    "year": "2017",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2017-12-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2017-12-23"
+                    },
+                    "beers_per_day": 24.39
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 13,
+                "date": "2017-11-11"
+            },
+            "most_unique_beers_per_day": {
+                "count": 13,
+                "date": "2017-11-11"
+            },
+            "beers_per_day": 13.42
+        },
+        {
+            "checkins": 10020,
+            "unique_breweries": 213,
+            "brewery_countries": 29,
+            "unique_venues": 150,
+            "venue_countries": 6,
+            "unique_beers": 418,
+            "max_abv": 17.5,
+            "avg_abv": 7.55,
+            "styles": 117,
+            "start_date": "2018-01-02",
+            "year": "2018",
+            "months": [
+                {
+                    "checkins": 1704,
+                    "unique_breweries": 44,
+                    "brewery_countries": 9,
+                    "unique_venues": 19,
+                    "venue_countries": 1,
+                    "unique_beers": 55,
+                    "max_abv": 14,
+                    "avg_abv": 8.21,
+                    "styles": 37,
+                    "start_date": "2018-01-02",
+                    "month": "01",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2018-01-13"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2018-01-13"
+                    },
+                    "beers_per_day": 54.97
+                },
+                {
+                    "checkins": 394,
+                    "unique_breweries": 24,
+                    "brewery_countries": 9,
+                    "unique_venues": 19,
+                    "venue_countries": 1,
+                    "unique_beers": 32,
+                    "max_abv": 11.8,
+                    "avg_abv": 6.86,
+                    "styles": 21,
+                    "start_date": "2018-02-01",
+                    "month": "02",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2018-02-28"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2018-02-28"
+                    },
+                    "beers_per_day": 14.07
+                },
+                {
+                    "checkins": 819,
+                    "unique_breweries": 34,
+                    "brewery_countries": 14,
+                    "unique_venues": 20,
+                    "venue_countries": 2,
+                    "unique_beers": 42,
+                    "max_abv": 13.5,
+                    "avg_abv": 7.69,
+                    "styles": 31,
+                    "start_date": "2018-03-02",
+                    "month": "03",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2018-03-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2018-03-09"
+                    },
+                    "beers_per_day": 26.42
+                },
+                {
+                    "checkins": 908,
+                    "unique_breweries": 37,
+                    "brewery_countries": 10,
+                    "unique_venues": 27,
+                    "venue_countries": 2,
+                    "unique_beers": 50,
+                    "max_abv": 13.8,
+                    "avg_abv": 8.53,
+                    "styles": 32,
+                    "start_date": "2018-04-03",
+                    "month": "04",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2018-04-21"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2018-04-21"
+                    },
+                    "beers_per_day": 30.27
+                },
+                {
+                    "checkins": 479,
+                    "unique_breweries": 34,
+                    "brewery_countries": 12,
+                    "unique_venues": 25,
+                    "venue_countries": 2,
+                    "unique_beers": 44,
+                    "max_abv": 17.5,
+                    "avg_abv": 6.22,
+                    "styles": 33,
+                    "start_date": "2018-05-01",
+                    "month": "05",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2018-05-04"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 8,
+                        "date": "2018-05-04"
+                    },
+                    "beers_per_day": 15.45
+                },
+                {
+                    "checkins": 718,
+                    "unique_breweries": 23,
+                    "brewery_countries": 9,
+                    "unique_venues": 12,
+                    "venue_countries": 1,
+                    "unique_beers": 27,
+                    "max_abv": 14.2,
+                    "avg_abv": 8.24,
+                    "styles": 24,
+                    "start_date": "2018-06-02",
+                    "month": "06",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2018-06-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2018-06-09"
+                    },
+                    "beers_per_day": 23.93
+                },
+                {
+                    "checkins": 234,
+                    "unique_breweries": 17,
+                    "brewery_countries": 5,
+                    "unique_venues": 13,
+                    "venue_countries": 2,
+                    "unique_beers": 20,
+                    "max_abv": 9.3,
+                    "avg_abv": 6.09,
+                    "styles": 18,
+                    "start_date": "2018-07-04",
+                    "month": "07",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2018-07-13"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2018-07-13"
+                    },
+                    "beers_per_day": 7.55
+                },
+                {
+                    "checkins": 638,
+                    "unique_breweries": 31,
+                    "brewery_countries": 9,
+                    "unique_venues": 17,
+                    "venue_countries": 3,
+                    "unique_beers": 38,
+                    "max_abv": 12.5,
+                    "avg_abv": 7.38,
+                    "styles": 29,
+                    "start_date": "2018-08-01",
+                    "month": "08",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2018-08-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2018-08-10"
+                    },
+                    "beers_per_day": 20.58
+                },
+                {
+                    "checkins": 443,
+                    "unique_breweries": 21,
+                    "brewery_countries": 9,
+                    "unique_venues": 15,
+                    "venue_countries": 1,
+                    "unique_beers": 25,
+                    "max_abv": 14,
+                    "avg_abv": 8.18,
+                    "styles": 18,
+                    "start_date": "2018-09-03",
+                    "month": "09",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2018-09-03"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2018-09-03"
+                    },
+                    "beers_per_day": 14.77
+                },
+                {
+                    "checkins": 1621,
+                    "unique_breweries": 43,
+                    "brewery_countries": 13,
+                    "unique_venues": 28,
+                    "venue_countries": 2,
+                    "unique_beers": 64,
+                    "max_abv": 12.5,
+                    "avg_abv": 5.75,
+                    "styles": 40,
+                    "start_date": "2018-10-04",
+                    "month": "10",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2018-10-31"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2018-10-31"
+                    },
+                    "beers_per_day": 52.29
+                },
+                {
+                    "checkins": 1770,
+                    "unique_breweries": 26,
+                    "brewery_countries": 10,
+                    "unique_venues": 13,
+                    "venue_countries": 1,
+                    "unique_beers": 36,
+                    "max_abv": 15.1,
+                    "avg_abv": 8.54,
+                    "styles": 24,
+                    "start_date": "2018-11-01",
+                    "month": "11",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2018-11-14"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 8,
+                        "date": "2018-11-14"
+                    },
+                    "beers_per_day": 59
+                },
+                {
+                    "checkins": 292,
+                    "unique_breweries": 13,
+                    "brewery_countries": 5,
+                    "unique_venues": 6,
+                    "venue_countries": 1,
+                    "unique_beers": 14,
+                    "max_abv": 15,
+                    "avg_abv": 6.39,
+                    "styles": 14,
+                    "start_date": "2018-12-06",
+                    "month": "12",
+                    "year": "2018",
+                    "most_checkins_per_day": {
+                        "count": 14,
+                        "date": "2018-12-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 14,
+                        "date": "2018-12-23"
+                    },
+                    "beers_per_day": 9.42
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 14,
+                "date": "2018-12-23"
+            },
+            "most_unique_beers_per_day": {
+                "count": 14,
+                "date": "2018-12-23"
+            },
+            "beers_per_day": 27.45
+        },
+        {
+            "checkins": 19556,
+            "unique_breweries": 196,
+            "brewery_countries": 24,
+            "unique_venues": 95,
+            "venue_countries": 5,
+            "unique_beers": 403,
+            "max_abv": 19.3,
+            "avg_abv": 6.41,
+            "styles": 111,
+            "start_date": "2019-01-12",
+            "year": "2019",
+            "months": [
+                {
+                    "checkins": 840,
+                    "unique_breweries": 21,
+                    "brewery_countries": 10,
+                    "unique_venues": 11,
+                    "venue_countries": 1,
+                    "unique_beers": 25,
+                    "max_abv": 19.3,
+                    "avg_abv": 9.4,
+                    "styles": 22,
+                    "start_date": "2019-01-12",
+                    "month": "01",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2019-01-26"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2019-01-26"
+                    },
+                    "beers_per_day": 27.1
+                },
+                {
+                    "checkins": 386,
+                    "unique_breweries": 11,
+                    "brewery_countries": 5,
+                    "unique_venues": 6,
+                    "venue_countries": 1,
+                    "unique_beers": 14,
+                    "max_abv": 12,
+                    "avg_abv": 9.58,
+                    "styles": 14,
+                    "start_date": "2019-02-02",
+                    "month": "02",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2019-02-07"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2019-02-07"
+                    },
+                    "beers_per_day": 13.79
+                },
+                {
+                    "checkins": 2777,
+                    "unique_breweries": 40,
+                    "brewery_countries": 14,
+                    "unique_venues": 17,
+                    "venue_countries": 1,
+                    "unique_beers": 56,
+                    "max_abv": 16,
+                    "avg_abv": 6.23,
+                    "styles": 34,
+                    "start_date": "2019-03-02",
+                    "month": "03",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 17,
+                        "date": "2019-03-02"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 16,
+                        "date": "2019-03-02"
+                    },
+                    "beers_per_day": 89.58
+                },
+                {
+                    "checkins": 2591,
+                    "unique_breweries": 41,
+                    "brewery_countries": 13,
+                    "unique_venues": 14,
+                    "venue_countries": 2,
+                    "unique_beers": 58,
+                    "max_abv": 14,
+                    "avg_abv": 6.79,
+                    "styles": 32,
+                    "start_date": "2019-04-01",
+                    "month": "04",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2019-04-13"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 8,
+                        "date": "2019-04-13"
+                    },
+                    "beers_per_day": 86.37
+                },
+                {
+                    "checkins": 1851,
+                    "unique_breweries": 24,
+                    "brewery_countries": 8,
+                    "unique_venues": 10,
+                    "venue_countries": 2,
+                    "unique_beers": 37,
+                    "max_abv": 13.2,
+                    "avg_abv": 5.47,
+                    "styles": 29,
+                    "start_date": "2019-05-03",
+                    "month": "05",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2019-05-10"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2019-05-10"
+                    },
+                    "beers_per_day": 59.71
+                },
+                {
+                    "checkins": 754,
+                    "unique_breweries": 9,
+                    "brewery_countries": 6,
+                    "unique_venues": 6,
+                    "venue_countries": 1,
+                    "unique_beers": 10,
+                    "max_abv": 7.7,
+                    "avg_abv": 5.42,
+                    "styles": 8,
+                    "start_date": "2019-06-05",
+                    "month": "06",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 2,
+                        "date": "2019-06-20"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 2,
+                        "date": "2019-06-20"
+                    },
+                    "beers_per_day": 25.13
+                },
+                {
+                    "checkins": 633,
+                    "unique_breweries": 20,
+                    "brewery_countries": 10,
+                    "unique_venues": 11,
+                    "venue_countries": 2,
+                    "unique_beers": 34,
+                    "max_abv": 11.5,
+                    "avg_abv": 4.83,
+                    "styles": 23,
+                    "start_date": "2019-07-01",
+                    "month": "07",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2019-07-17"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2019-07-17"
+                    },
+                    "beers_per_day": 20.42
+                },
+                {
+                    "checkins": 2105,
+                    "unique_breweries": 34,
+                    "brewery_countries": 9,
+                    "unique_venues": 13,
+                    "venue_countries": 1,
+                    "unique_beers": 55,
+                    "max_abv": 13,
+                    "avg_abv": 6.35,
+                    "styles": 32,
+                    "start_date": "2019-08-01",
+                    "month": "08",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 13,
+                        "date": "2019-08-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 13,
+                        "date": "2019-08-23"
+                    },
+                    "beers_per_day": 67.9
+                },
+                {
+                    "checkins": 2474,
+                    "unique_breweries": 34,
+                    "brewery_countries": 11,
+                    "unique_venues": 14,
+                    "venue_countries": 1,
+                    "unique_beers": 43,
+                    "max_abv": 12.5,
+                    "avg_abv": 6.51,
+                    "styles": 32,
+                    "start_date": "2019-09-01",
+                    "month": "09",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2019-09-04"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2019-09-04"
+                    },
+                    "beers_per_day": 82.47
+                },
+                {
+                    "checkins": 2494,
+                    "unique_breweries": 23,
+                    "brewery_countries": 10,
+                    "unique_venues": 9,
+                    "venue_countries": 1,
+                    "unique_beers": 34,
+                    "max_abv": 10,
+                    "avg_abv": 5.05,
+                    "styles": 20,
+                    "start_date": "2019-10-01",
+                    "month": "10",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2019-10-16"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2019-10-16"
+                    },
+                    "beers_per_day": 80.45
+                },
+                {
+                    "checkins": 1525,
+                    "unique_breweries": 27,
+                    "brewery_countries": 6,
+                    "unique_venues": 15,
+                    "venue_countries": 2,
+                    "unique_beers": 34,
+                    "max_abv": 12.3,
+                    "avg_abv": 7.46,
+                    "styles": 29,
+                    "start_date": "2019-11-01",
+                    "month": "11",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 10,
+                        "date": "2019-11-02"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 10,
+                        "date": "2019-11-02"
+                    },
+                    "beers_per_day": 50.83
+                },
+                {
+                    "checkins": 1126,
+                    "unique_breweries": 22,
+                    "brewery_countries": 9,
+                    "unique_venues": 10,
+                    "venue_countries": 1,
+                    "unique_beers": 23,
+                    "max_abv": 12,
+                    "avg_abv": 7.19,
+                    "styles": 21,
+                    "start_date": "2019-12-01",
+                    "month": "12",
+                    "year": "2019",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2019-12-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2019-12-23"
+                    },
+                    "beers_per_day": 36.32
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 17,
+                "date": "2019-03-02"
+            },
+            "most_unique_beers_per_day": {
+                "count": 16,
+                "date": "2019-03-02"
+            },
+            "beers_per_day": 53.58
+        },
+        {
+            "checkins": 69248,
+            "unique_breweries": 130,
+            "brewery_countries": 19,
+            "unique_venues": 38,
+            "venue_countries": 2,
+            "unique_beers": 263,
+            "max_abv": 19,
+            "avg_abv": 6.56,
+            "styles": 100,
+            "start_date": "2020-01-01",
+            "year": "2020",
+            "months": [
+                {
+                    "checkins": 1344,
+                    "unique_breweries": 13,
+                    "brewery_countries": 5,
+                    "unique_venues": 6,
+                    "venue_countries": 1,
+                    "unique_beers": 17,
+                    "max_abv": 16,
+                    "avg_abv": 7.41,
+                    "styles": 14,
+                    "start_date": "2020-01-01",
+                    "month": "01",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2020-01-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-01-04"
+                    },
+                    "beers_per_day": 43.35
+                },
+                {
+                    "checkins": 938,
+                    "unique_breweries": 12,
+                    "brewery_countries": 6,
+                    "unique_venues": 7,
+                    "venue_countries": 1,
+                    "unique_beers": 14,
+                    "max_abv": 13,
+                    "avg_abv": 4.22,
+                    "styles": 12,
+                    "start_date": "2020-02-02",
+                    "month": "02",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2020-02-08"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-02-08"
+                    },
+                    "beers_per_day": 32.34
+                },
+                {
+                    "checkins": 3802,
+                    "unique_breweries": 20,
+                    "brewery_countries": 8,
+                    "unique_venues": 6,
+                    "venue_countries": 2,
+                    "unique_beers": 24,
+                    "max_abv": 19,
+                    "avg_abv": 7.13,
+                    "styles": 23,
+                    "start_date": "2020-03-01",
+                    "month": "03",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2020-03-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-03-09"
+                    },
+                    "beers_per_day": 122.65
+                },
+                {
+                    "checkins": 6901,
+                    "unique_breweries": 12,
+                    "brewery_countries": 3,
+                    "unique_venues": 2,
+                    "venue_countries": 2,
+                    "unique_beers": 18,
+                    "max_abv": 19,
+                    "avg_abv": 6.14,
+                    "styles": 13,
+                    "start_date": "2020-04-01",
+                    "month": "04",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2020-04-10"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-04-10"
+                    },
+                    "beers_per_day": 230.03
+                },
+                {
+                    "checkins": 6503,
+                    "unique_breweries": 23,
+                    "brewery_countries": 10,
+                    "unique_venues": 4,
+                    "venue_countries": 2,
+                    "unique_beers": 25,
+                    "max_abv": 15.8,
+                    "avg_abv": 6.71,
+                    "styles": 18,
+                    "start_date": "2020-05-02",
+                    "month": "05",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2020-05-19"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2020-05-19"
+                    },
+                    "beers_per_day": 209.77
+                },
+                {
+                    "checkins": 3611,
+                    "unique_breweries": 21,
+                    "brewery_countries": 8,
+                    "unique_venues": 9,
+                    "venue_countries": 2,
+                    "unique_beers": 23,
+                    "max_abv": 11,
+                    "avg_abv": 5.11,
+                    "styles": 14,
+                    "start_date": "2020-06-01",
+                    "month": "06",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2020-06-05"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2020-06-05"
+                    },
+                    "beers_per_day": 120.37
+                },
+                {
+                    "checkins": 4046,
+                    "unique_breweries": 20,
+                    "brewery_countries": 6,
+                    "unique_venues": 10,
+                    "venue_countries": 2,
+                    "unique_beers": 24,
+                    "max_abv": 12,
+                    "avg_abv": 5.8,
+                    "styles": 22,
+                    "start_date": "2020-07-02",
+                    "month": "07",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2020-07-26"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2020-07-26"
+                    },
+                    "beers_per_day": 130.52
+                },
+                {
+                    "checkins": 2594,
+                    "unique_breweries": 12,
+                    "brewery_countries": 5,
+                    "unique_venues": 6,
+                    "venue_countries": 2,
+                    "unique_beers": 17,
+                    "max_abv": 10.5,
+                    "avg_abv": 5.39,
+                    "styles": 14,
+                    "start_date": "2020-08-01",
+                    "month": "08",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2020-08-15"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-08-06"
+                    },
+                    "beers_per_day": 83.68
+                },
+                {
+                    "checkins": 5335,
+                    "unique_breweries": 17,
+                    "brewery_countries": 7,
+                    "unique_venues": 6,
+                    "venue_countries": 2,
+                    "unique_beers": 25,
+                    "max_abv": 13,
+                    "avg_abv": 6.75,
+                    "styles": 19,
+                    "start_date": "2020-09-02",
+                    "month": "09",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2020-09-11"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2020-09-11"
+                    },
+                    "beers_per_day": 177.83
+                },
+                {
+                    "checkins": 5884,
+                    "unique_breweries": 21,
+                    "brewery_countries": 11,
+                    "unique_venues": 6,
+                    "venue_countries": 2,
+                    "unique_beers": 28,
+                    "max_abv": 14,
+                    "avg_abv": 6.94,
+                    "styles": 20,
+                    "start_date": "2020-10-01",
+                    "month": "10",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2020-10-01"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 8,
+                        "date": "2020-10-01"
+                    },
+                    "beers_per_day": 189.81
+                },
+                {
+                    "checkins": 4830,
+                    "unique_breweries": 11,
+                    "brewery_countries": 5,
+                    "unique_venues": 1,
+                    "venue_countries": 1,
+                    "unique_beers": 13,
+                    "max_abv": 13,
+                    "avg_abv": 6.22,
+                    "styles": 10,
+                    "start_date": "2020-11-03",
+                    "month": "11",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2020-11-28"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2020-11-28"
+                    },
+                    "beers_per_day": 161
+                },
+                {
+                    "checkins": 23460,
+                    "unique_breweries": 40,
+                    "brewery_countries": 9,
+                    "unique_venues": 1,
+                    "venue_countries": 1,
+                    "unique_beers": 64,
+                    "max_abv": 13.5,
+                    "avg_abv": 7.01,
+                    "styles": 39,
+                    "start_date": "2020-12-01",
+                    "month": "12",
+                    "year": "2020",
+                    "most_checkins_per_day": {
+                        "count": 9,
+                        "date": "2020-12-23"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 9,
+                        "date": "2020-12-23"
+                    },
+                    "beers_per_day": 756.77
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 9,
+                "date": "2020-12-23"
+            },
+            "most_unique_beers_per_day": {
+                "count": 9,
+                "date": "2020-12-23"
+            },
+            "beers_per_day": 189.2
+        },
+        {
+            "checkins": 62686,
+            "unique_breweries": 155,
+            "brewery_countries": 21,
+            "unique_venues": 34,
+            "venue_countries": 2,
+            "unique_beers": 279,
+            "max_abv": 40,
+            "avg_abv": 6.08,
+            "styles": 104,
+            "start_date": "2021-01-01",
+            "year": "2021",
+            "months": [
+                {
+                    "checkins": 9072,
+                    "unique_breweries": 30,
+                    "brewery_countries": 5,
+                    "unique_venues": 4,
+                    "venue_countries": 2,
+                    "unique_beers": 37,
+                    "max_abv": 15,
+                    "avg_abv": 7.8,
+                    "styles": 29,
+                    "start_date": "2021-01-01",
+                    "month": "01",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2021-01-15"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2021-01-15"
+                    },
+                    "beers_per_day": 292.65
+                },
+                {
+                    "checkins": 6307,
+                    "unique_breweries": 19,
+                    "brewery_countries": 11,
+                    "unique_venues": 3,
+                    "venue_countries": 2,
+                    "unique_beers": 21,
+                    "max_abv": 19,
+                    "avg_abv": 5.77,
+                    "styles": 21,
+                    "start_date": "2021-02-01",
+                    "month": "02",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 2,
+                        "date": "2021-02-05"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 2,
+                        "date": "2021-02-05"
+                    },
+                    "beers_per_day": 225.25
+                },
+                {
+                    "checkins": 7935,
+                    "unique_breweries": 20,
+                    "brewery_countries": 6,
+                    "unique_venues": 1,
+                    "venue_countries": 1,
+                    "unique_beers": 22,
+                    "max_abv": 19,
+                    "avg_abv": 5.95,
+                    "styles": 19,
+                    "start_date": "2021-03-03",
+                    "month": "03",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 2,
+                        "date": "2021-03-03"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 2,
+                        "date": "2021-03-03"
+                    },
+                    "beers_per_day": 255.97
+                },
+                {
+                    "checkins": 8328,
+                    "unique_breweries": 23,
+                    "brewery_countries": 6,
+                    "unique_venues": 2,
+                    "venue_countries": 2,
+                    "unique_beers": 25,
+                    "max_abv": 12,
+                    "avg_abv": 6.13,
+                    "styles": 20,
+                    "start_date": "2021-04-01",
+                    "month": "04",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 6,
+                        "date": "2021-04-30"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 6,
+                        "date": "2021-04-30"
+                    },
+                    "beers_per_day": 277.6
+                },
+                {
+                    "checkins": 7260,
+                    "unique_breweries": 21,
+                    "brewery_countries": 5,
+                    "unique_venues": 3,
+                    "venue_countries": 2,
+                    "unique_beers": 23,
+                    "max_abv": 14,
+                    "avg_abv": 5.32,
+                    "styles": 14,
+                    "start_date": "2021-05-01",
+                    "month": "05",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 3,
+                        "date": "2021-05-17"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 3,
+                        "date": "2021-05-17"
+                    },
+                    "beers_per_day": 234.19
+                },
+                {
+                    "checkins": 6062,
+                    "unique_breweries": 31,
+                    "brewery_countries": 10,
+                    "unique_venues": 11,
+                    "venue_countries": 2,
+                    "unique_beers": 34,
+                    "max_abv": 40,
+                    "avg_abv": 5.67,
+                    "styles": 24,
+                    "start_date": "2021-06-02",
+                    "month": "06",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 5,
+                        "date": "2021-06-16"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 5,
+                        "date": "2021-06-16"
+                    },
+                    "beers_per_day": 202.07
+                },
+                {
+                    "checkins": 3724,
+                    "unique_breweries": 33,
+                    "brewery_countries": 8,
+                    "unique_venues": 11,
+                    "venue_countries": 2,
+                    "unique_beers": 42,
+                    "max_abv": 16.8,
+                    "avg_abv": 5.67,
+                    "styles": 30,
+                    "start_date": "2021-07-03",
+                    "month": "07",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 7,
+                        "date": "2021-07-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 7,
+                        "date": "2021-07-09"
+                    },
+                    "beers_per_day": 120.13
+                },
+                {
+                    "checkins": 3545,
+                    "unique_breweries": 30,
+                    "brewery_countries": 9,
+                    "unique_venues": 12,
+                    "venue_countries": 2,
+                    "unique_beers": 43,
+                    "max_abv": 14,
+                    "avg_abv": 6.53,
+                    "styles": 27,
+                    "start_date": "2021-08-02",
+                    "month": "08",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 8,
+                        "date": "2021-08-27"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 8,
+                        "date": "2021-08-27"
+                    },
+                    "beers_per_day": 114.35
+                },
+                {
+                    "checkins": 6329,
+                    "unique_breweries": 23,
+                    "brewery_countries": 7,
+                    "unique_venues": 5,
+                    "venue_countries": 2,
+                    "unique_beers": 27,
+                    "max_abv": 14.2,
+                    "avg_abv": 5.75,
+                    "styles": 23,
+                    "start_date": "2021-09-03",
+                    "month": "09",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2021-09-06"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2021-09-06"
+                    },
+                    "beers_per_day": 210.97
+                },
+                {
+                    "checkins": 4124,
+                    "unique_breweries": 32,
+                    "brewery_countries": 10,
+                    "unique_venues": 14,
+                    "venue_countries": 2,
+                    "unique_beers": 33,
+                    "max_abv": 15.2,
+                    "avg_abv": 5.33,
+                    "styles": 27,
+                    "start_date": "2021-10-01",
+                    "month": "10",
+                    "year": "2021",
+                    "most_checkins_per_day": {
+                        "count": 4,
+                        "date": "2021-10-09"
+                    },
+                    "most_unique_beers_per_day": {
+                        "count": 4,
+                        "date": "2021-10-09"
+                    },
+                    "beers_per_day": 133.03
+                }
+            ],
+            "most_checkins_per_day": {
+                "count": 8,
+                "date": "2021-08-27"
+            },
+            "most_unique_beers_per_day": {
+                "count": 8,
+                "date": "2021-08-27"
+            },
+            "beers_per_day": 171.74
+        }
+    ]
+}

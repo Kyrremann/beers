@@ -16,28 +16,35 @@ layout: default
 	  <th class="sort" data-sort="beer">Beer</th>
 	  <th class="sort" data-sort="abv" style="min-width: 2.7em;">ABV</th>
 	  <th class="sort" data-sort="ibu" style="min-width: 2.7em;">IBU</th>
+	  <th class="sort" data-sort="avg_rating" style="min-width: 2.7em;">Avg rating</th>
 	  <th class="sort" data-sort="checkins" style="min-width: 5.1em;">Checkins</th>
+	  <th class="sort" data-sort="first_checkins" style="min-width: 5.1em;">First checkin</th>
 	  <th class="sort" data-sort="brewery">Brewery</th>
 	</tr>
       </thead>
       <tbody class="list">
-	{% for value in site.data.beers %}
-	{% assign beer = value[1] %}
+	{% for beer in site.data.beers %}
 	<tr>
 	  <td class="beer">
-	    {{ beer.beer_name }}
+	    {{ beer.name }}
 	  </td>
 	  <td class="abv">
-	    {{ beer.beer_abv }}
+	    {{ beer.abv }}
 	  </td>
 	  <td class="ibu">
-	    {{ beer.beer_ibu }}
+	    {{ beer.ibu }}
+	  </td>
+	  <td class="avg_rating">
+	    {{ beer.avg_rating }}
 	  </td>
 	  <td class="checkins">
-	    {{ beer.count }}
+	    {{ beer.checkins }}
+	  </td>
+	  <td class="first_checkins">
+	    {{ beer.checkin_at }}
 	  </td>
 	  <td class="brewery">
-	    {{ beer.brewery_name }}
+	    {{ beer.brewery }}
 	  </td>
 	</tr>
 	{% endfor %}

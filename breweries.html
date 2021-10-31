@@ -18,11 +18,10 @@ layout: default
 	</tr>
       </thead>
       <tbody class="list">
-	{% for value in site.data.breweries %}
-	{% assign brewery = value[1] %}
+	{% for brewery in site.data.breweries %}
 	<tr>
 	  <td class="brewery">
-	    {{ brewery.brewery_name }}
+	    {{ brewery.name }}
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
 	      {% for beer in brewery.beers %}
 	      {{ beer }}
@@ -31,10 +30,10 @@ layout: default
 	    </span>
 	  </td>
 	  <td valign="top" class="beers">
-	    {{ brewery.count }}
+	    {{ brewery.checkins }}
 	  </td>
 	  <td valign="top" class="country">
-	    {{ brewery.brewery_country }}
+	    {{ brewery.country }}
 	  </td>
 	</tr>
 	{% endfor %}
