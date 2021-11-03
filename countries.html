@@ -21,7 +21,8 @@ layout: default
     projection: 'equirectangular',
     element: document.getElementById('container'),
     geographyConfig: {
-      highlightBorderColor: '#bada55',
+      highlightBorderColor: '#f6c101',
+      highlightFillColor: '#fff897',
       popupTemplate: function(geography, data) {
         if (data) {
           return '<div class="hoverinfo">' + geography.properties.name + '<br />Breweries: ' +  data.breweries + '<br />Checkins: ' + data.checkins + '</div>'
@@ -32,7 +33,7 @@ layout: default
       highlightBorderWidth: 1
     },
     fills: {
-      brewery: '#CC4731',
+      brewery: '#c96e12',
       defaultFill: '#eee'
     },
     data: {{ site.data.countries | jsonify }}
