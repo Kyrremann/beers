@@ -1,4 +1,4 @@
-{% assign data = include.data %}
+{% assign data = include.data[1] %}
 <div class="pure-u-1 pure-u-md-1-3">
 	<div class="boxes-table">
 		<div class="boxes-table-free">
@@ -19,8 +19,7 @@
 				<li>Venues: {{ data.unique_venues }}</li>
 				<li>Venue countries: {{ data.venue_countries }}</li>
 				<li>Most beers per day: {{ data.most_checkins_per_day.count }} ({{ data.most_checkins_per_day.date }})</li>
-				<li>Most unique per day: {{ data.most_unique_beers_per_day.count }} ({{ data.most_unique_beers_per_day.date
-					}})</li>
+				<li>Most unique per day: {{ data.most_unique_beers_per_day.count }} ({{ data.most_unique_beers_per_day.date }})</li>
 				<li>Avg per day: {{ data.beers_per_day }}</li>
 			</ul>
 			<a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ data.year }}/">Monthly</a>

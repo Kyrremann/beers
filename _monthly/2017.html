@@ -5,8 +5,7 @@ banner: In 2017 I started drinking 6th of January and I managed to drink 586 bee
 
 {% for value in site.data.allmy.years['2017'].months %}
 {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
-  {% assign data = value[1] %}
-  {% include monthly.html data=data %}
+  {% include monthly.html data=value %}
   {% cycle 'end row' : '', '', '</div>' %}
 {% endfor %}
 {% cycle 'end row' : '', '</div>', '</div>' %}
