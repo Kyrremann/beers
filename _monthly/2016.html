@@ -4,8 +4,8 @@ banner: In 2016 I started drinking 1th of March and I managed to drink 230 beers
 ---
 
 {% for value in site.data.allmy.years['2016'].months %}
-{% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
-  {% include monthly.html data=value %}
+  {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
+  {% include infoboxes.html data=value %}
   {% cycle 'end row' : '', '', '</div>' %}
 {% endfor %}
 {% cycle 'end row' : '', '</div>', '</div>' %}
