@@ -21,7 +21,7 @@ layout: default
 	{% for brewery in site.data.breweries %}
 	<tr>
 	  <td class="brewery">
-	    {{ brewery.name }}
+	    <a href="https://untappd.com/brewery/{{ brewery.id }}">{{ brewery.name }}</a>
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
 	      {% for beer in brewery.beers %}
 	      {{ beer }}

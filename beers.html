@@ -27,7 +27,7 @@ layout: default
 	{% for beer in site.data.beers %}
 	<tr>
 	  <td class="beer">
-	    {{ beer.name }}
+	    <a href="https://untappd.com/beer/{{ beer.id }}">{{ beer.name }}</a>
 	  </td>
 	  <td class="abv">
 	    {{ beer.abv }}
@@ -48,7 +48,7 @@ layout: default
 	    {{ beer.checkin_at }}
 	  </td>
 	  <td class="brewery">
-	    {{ beer.brewery }}
+	    <a href="https://untappd.com/brewery/{{ beer.brewery_id }}">{{ beer.brewery }}</a>
 	  </td>
 	</tr>
 	{% endfor %}
