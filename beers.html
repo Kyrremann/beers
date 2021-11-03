@@ -16,6 +16,7 @@ layout: default
 	  <th class="sort" data-sort="beer">Beer</th>
 	  <th class="sort" data-sort="abv" style="min-width: 2.7em;">ABV</th>
 	  <th class="sort" data-sort="ibu" style="min-width: 2.7em;">IBU</th>
+	  <th class="sort" data-sort="style" style="min-width: 2.7em;">Style</th>
 	  <th class="sort" data-sort="avg_rating" style="min-width: 2.7em;">Avg rating</th>
 	  <th class="sort" data-sort="checkins" style="min-width: 5.1em;">Checkins</th>
 	  <th class="sort" data-sort="first_checkins" style="min-width: 5.1em;">First checkin</th>
@@ -33,6 +34,9 @@ layout: default
 	  </td>
 	  <td class="ibu">
 	    {{ beer.ibu }}
+	  </td>
+	  <td class="style">
+	    {{ beer.type }}
 	  </td>
 	  <td class="avg_rating">
 	    {{ beer.avg_rating }}
@@ -55,7 +59,7 @@ layout: default
 
 <script>
   let options = {
-    valueNames: [ "beer", "abv", "ibu", "checkins", "brewery" ]
+    valueNames: [ "beer", "abv", "ibu", "style", "checkins", "first_checkins", "brewery" ]
   };
 
   let beers = new List("beers", options);
