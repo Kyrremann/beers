@@ -447,3 +447,9 @@ p {
 #prev:hover .nav-title, #next:hover .nav-title {
     display: inline;
 }
+
+.country-map {
+    position: relative;
+    width: 980px;
+    height: 400px;
+}
