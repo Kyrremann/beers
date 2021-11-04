@@ -312,6 +312,7 @@ p {
  * -- RESPONSIVE MENU --
  */
 .custom-wrapper {
+    z-index: 1;
     background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     height: 2.1em;
