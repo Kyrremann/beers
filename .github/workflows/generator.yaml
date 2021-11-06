@@ -15,7 +15,9 @@ jobs:
           repository: "kyrremann/unparsd"
           latest: true
           fileName: "unparsd"
-      - run: ./unparsd
+      - run: |
+          chmod +x unparsd
+          ./unparsd
       - name: Commit back
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
