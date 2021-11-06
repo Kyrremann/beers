@@ -312,6 +312,7 @@ p {
  * -- RESPONSIVE MENU --
  */
 .custom-wrapper {
+    z-index: 1;
     background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     height: 2.1em;
@@ -445,4 +446,10 @@ p {
 
 #prev:hover .nav-title, #next:hover .nav-title {
     display: inline;
+}
+
+.country-map {
+    position: relative;
+    width: 980px;
+    height: 400px;
 }

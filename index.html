@@ -3,15 +3,15 @@ layout: default
 ---
 
 <div class="banner">
-  <h1 class="banner-head">I have had {{ site.data.allmy.checkins }} beers since {{ site.data.allmy.start_date | date: "%-dth of %B, %Y" }}, averaging {{ site.data.allmy.checkins | divided_by: site.data.allmy.days_drinking | round: 2 }} beers a day</h1>
+  <h1 class="banner-head">I have had {{ site.data.allmy.checkins }} beers since {{ site.data.allmy.start_date | date:
+    "%-dth of %B, %Y" }}, averaging {{ site.data.allmy.beers_per_day }} beers a day</h1>
 </div>
 
 <div class="l-content information">
   {% for value in site.data.allmy.years reversed %}
   {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
-    {% assign year = value[0] %}
-    {% assign data = value[1] %}
-    {% include yearly.html year=year data=data %}
+  {% assign data = value[1] %}  
+    {% include infoboxes.html data=data %}
     {% cycle 'end row' : '', '', '</div>' %}
   {% endfor %}
   {% cycle 'end row' : '', '</div>', '</div>' %}

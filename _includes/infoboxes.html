@@ -1,0 +1,34 @@
+{% assign data = include.data %}
+<div class="pure-u-1 pure-u-md-1-3">
+	<div class="boxes-table" {% if data.month %}style="padding: 0;"{% endif %}>
+		<div class="boxes-table-free">
+			<div class="boxes-table-header">
+				{% if data.month %}
+				<h2>{{ data.month }}</h2>
+				{% else %}
+				<h2>{{ data.year }}</h2>
+				{% endif %}
+				<span class="boxes-table-text">
+					{{ data.checkins }}
+					<span>beers</span>
+				</span>
+			</div>
+			<ul class="boxes-table-list">
+				<li>Unique beers: {{ data.unique_beers }}</li>
+				<li>Styles: {{ data.styles }}</li>
+				<li>Max abv: {{ data.max_abv }}%</li>
+				<li>Avg abv: {{ data.avg_abv }}%</li>
+				<li>Breweries: {{ data.unique_breweries }}</li>
+				<li>Brewery countries: {{ data.brewery_countries }}</li>
+				<li>Venues: {{ data.unique_venues }}</li>
+				<li>Venue countries: {{ data.venue_countries }}</li>
+				<li>Most beers per day: {{ data.most_checkins_per_day.count }} ({{ data.most_checkins_per_day.date }})</li>
+				<li>Most unique per day: {{ data.most_unique_beers_per_day.count }} ({{ data.most_unique_beers_per_day.date }})</li>
+				<li>Avg per day: {{ data.beers_per_day }}</li>
+			</ul>
+			{% if data.month == nil %}
+			<a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ data.year }}/">Monthly</a>
+			{% endif %}
+		</div>
+	</div>
+</div>

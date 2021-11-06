@@ -8,7 +8,36 @@ layout: default
 </div>
 
 <div class="l-content information">
-  <div id="container" style="position: relative; width: 980; height: 400px;"></div>
+  <div id="container" class="country-map"></div>
+
+  <div class="pure-u-1" id="countries">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
+      <thead>
+	<tr>
+	  <th class="sort" data-sort="country">Country</th>
+	  <th class="sort" data-sort="checkins" style="min-width: 3.4em;">checkins</th>
+	  <th class="sort" data-sort="breweries">Breweries</th>
+	</tr>
+      </thead>
+      <tbody class="list">
+	{% for data in site.data.countries %}
+  {% assign country = data[1] %}
+	<tr>
+	  <td class="country">
+	    {{ country.name }}
+	  </td>
+	  <td valign="top" class="checkins">
+	    {{ country.checkins }}
+	  </td>
+	  <td valign="top" class="breweries">
+	    {{ country.breweries }}
+	  </td>
+	</tr>
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
@@ -21,7 +50,8 @@ layout: default
     projection: 'equirectangular',
     element: document.getElementById('container'),
     geographyConfig: {
-      highlightBorderColor: '#bada55',
+      highlightBorderColor: '#f6c101',
+      highlightFillColor: '#fff897',
       popupTemplate: function(geography, data) {
         if (data) {
           return '<div class="hoverinfo">' + geography.properties.name + '<br />Breweries: ' +  data.breweries + '<br />Checkins: ' + data.checkins + '</div>'
@@ -32,9 +62,15 @@ layout: default
       highlightBorderWidth: 1
     },
     fills: {
-      brewery: '#CC4731',
+      brewery: '#c96e12',
       defaultFill: '#eee'
     },
     data: {{ site.data.countries | jsonify }}
   });
+
+  let options = {
+    valueNames: [ "country", "checkins", "breweries" ]
+  };
+
+  let countries = new List("countries", options);
 </script>

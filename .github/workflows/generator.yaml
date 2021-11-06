@@ -1,0 +1,31 @@
+name: Genereate data
+on:
+  push:
+    paths:
+      - untappd.json
+      - .github/workflows/generator.yaml
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: robinraju/release-downloader@v1.2
+        with:
+          repository: "kyrremann/unparsd"
+          latest: true
+          fileName: "unparsd"
+      - run: |
+          chmod +x unparsd
+          ./unparsd
+      - name: Commit back
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "Github Action"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout master
+          git add -A .
+          git commit -m "Genereated new data"
+          git push
