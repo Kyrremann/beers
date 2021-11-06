@@ -9,7 +9,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@
+      - uses: actions/checkout@v2
       - uses: robinraju/release-downloader@v1.2
         with:
           repository: "kyrremann/unparsd"
