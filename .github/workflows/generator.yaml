@@ -22,10 +22,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "Github Action"
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git checkout master
           git add -A .
-          git commit -m "Genereated new data"
+          git commit -m "ci: Genereated new data"
           git push
