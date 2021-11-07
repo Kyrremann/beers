@@ -23,11 +23,15 @@ layout: default
 	  <td class="brewery">
 	    <a href="https://untappd.com/brewery/{{ brewery.id }}">{{ brewery.name }}</a>
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
-	      {{ brewery.beers }}
+		{% assign beers = brewery.beers |  split: ","%}
+		{% for beer in beers %}
+		  {{ beer }}
+		  <br />
+	  	{% endfor %}
 	    </span>
 	  </td>
 	  <td valign="top" class="beers">
-	    {{ brewery.checkins }}
+		  {{ brewery.checkins }}
 	  </td>
 	  <td valign="top" class="country">
 	    {{ brewery.country }}
