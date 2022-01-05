@@ -1,4 +1,4 @@
-name: Genereate data
+name: Generate data
 on:
   workflow_dispatch:
   push:
