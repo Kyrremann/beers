@@ -23,7 +23,7 @@ layout: default
 	  <td class="brewery">
 	    <a href="https://untappd.com/brewery/{{ brewery.id }}">{{ brewery.name }}</a>
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
-		{% assign beers = brewery.beers |  split: ","%}
+		{% assign beers = brewery.beers |  newline_to_br %}
 		{% for beer in beers %}
 		  {{ beer }}
 		  <br />
