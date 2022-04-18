@@ -12,16 +12,16 @@ layout: default
     <input class="search" placeholder="Filter">
     <table class="pure-table pure-table-striped" style="width: 100%;">
       <thead>
-	<tr>
-	  <th class="sort" data-sort="beer">Beer</th>
-	  <th class="sort" data-sort="abv" style="min-width: 2.7em;">ABV</th>
-	  <th class="sort" data-sort="ibu" style="min-width: 2.7em;">IBU</th>
-	  <th class="sort" data-sort="style" style="min-width: 2.7em;">Style</th>
-	  <th class="sort" data-sort="avg_rating" style="min-width: 2.7em;">Avg rating</th>
-	  <th class="sort" data-sort="checkins" style="min-width: 5.1em;">Checkins</th>
-	  <th class="sort" data-sort="first_checkins" style="min-width: 5.1em;">First checkin</th>
-	  <th class="sort" data-sort="brewery">Brewery</th>
-	</tr>
+	      <tr>
+	        <th class="sort" data-sort="beer">Beer</th>
+	        <th class="sort" data-sort="abv" style="min-width: 2.7em;">ABV</th>
+	        <th class="sort" data-sort="ibu" style="min-width: 2.7em;">IBU</th>
+	        <th class="sort" data-sort="style" style="min-width: 2.7em;">Style</th>
+	        <th class="sort" data-sort="avg_rating" style="min-width: 2.7em;">Avg rating</th>
+	        <th class="sort" data-sort="checkins" style="min-width: 5.1em;">Checkins</th>
+	        <th class="sort" data-sort="first_checkins" style="min-width: 5.1em;">First checkin</th>
+	        <th class="sort" data-sort="brewery">Brewery</th>
+	      </tr>
       </thead>
       <tbody class="list">
 	{% for beer in site.data.beers %}
