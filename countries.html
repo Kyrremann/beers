@@ -2,75 +2,106 @@
 layout: default
 ---
 
-
 <div class="banner">
   <h1 class="banner-head">I have had beers from {{ site.data.countries | size }} different countries</h1>
 </div>
 
-<div class="l-content information">
-  <div id="container" class="country-map"></div>
+<!-- Resources -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+
+<!-- HTML -->
+<div id="chartdiv" style="width: 50%; height: 500px; margin: 0 auto;"></div>
+
+<div class="l-content information">
   <div class="pure-u-1" id="countries">
     <input class="search" placeholder="Filter">
     <table class="pure-table pure-table-striped" style="width: 100%;">
       <thead>
 	<tr>
-	  <th class="sort" data-sort="country">Country</th>
-	  <th class="sort" data-sort="checkins" style="min-width: 3.4em;">checkins</th>
+	  <th class="sort" data-sort="name">Country</th>
+	  <th class="sort" data-sort="checkins">Checkins</th>
 	  <th class="sort" data-sort="breweries">Breweries</th>
 	</tr>
       </thead>
       <tbody class="list">
-	{% for data in site.data.countries %}
-  {% assign country = data[1] %}
-	<tr>
-	  <td class="country">
-	    {{ country.name }}
-	  </td>
-	  <td valign="top" class="checkins">
-	    {{ country.checkins }}
-	  </td>
-	  <td valign="top" class="breweries">
-	    {{ country.breweries }}
-	  </td>
-	</tr>
-	{% endfor %}
       </tbody>
     </table>
   </div>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src={{ "/js/datamaps.world.min.js" | prepend: site.baseurl }}></script>
-
+<!-- Chart code -->
 <script>
-  var map = new Datamap({
-    scope: 'world',
-    projection: 'equirectangular',
-    element: document.getElementById('container'),
-    geographyConfig: {
-      highlightBorderColor: '#f6c101',
-      highlightFillColor: '#fff897',
-      popupTemplate: function(geography, data) {
-        if (data) {
-          return '<div class="hoverinfo">' + geography.properties.name + '<br />Breweries: ' +  data.breweries + '<br />Checkins: ' + data.checkins + '</div>'
-        } else {
-          return '<div class="hoverinfo">' + geography.properties.name + '</div>'
-        }
-      },
-      highlightBorderWidth: 1
-    },
-    fills: {
-      brewery: '#c96e12',
-      defaultFill: '#eee'
-    },
-    data: {{ site.data.countries | jsonify }}
-  });
-
   let options = {
-    valueNames: [ "country", "checkins", "breweries" ]
+    valueNames: [ "name", "checkins", "breweries" ],
+    item: '<tr><td class="name"></td><td valign="top" class="checkins"></td><td valign="top" class="breweries"></td></tr>'
   };
 
-  let countries = new List("countries", options);
+  countryData = {{ site.data.countries | jsonify }};
+  countryList = new List("countries", options, countryData);
+
+  function zoomOut() {
+    countryList.clear();
+    countryList.add(countryData);
+  }
+
+  am5.ready(function() {
+    var root = am5.Root.new("chartdiv");
+
+    root.setThemes([
+      am5themes_Animated.new(root)
+    ]);
+
+    var chart = root.container.children.push(am5map.MapChart.new(root, {
+      panX: "translateX",
+      panY: "translateY",
+      projection: am5map.geoMercator()
+    }));
+
+
+    // Create main polygon series for countries
+    // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+    var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+      geoJSON: am5geodata_worldLow,
+      exclude: ["AQ"]
+    }));
+
+    polygonSeries.mapPolygons.template.setAll({
+      tooltipText: "{name}",
+      templateField: "settings"
+    });
+
+    var previousPolygon;
+    polygonSeries.mapPolygons.template.on("active", function (active, target) {
+      if (previousPolygon && previousPolygon != target) {
+        previousPolygon.set("active", false);
+      }
+      if (target.get("active")) {
+        polygonSeries.zoomToDataItem(target.dataItem );
+        // TODO: Show beer had in each country
+        // also need to change the table, probably easier to have two tables
+        //countryList.clear();
+        //countryList.add({name: "Beer", checkins: 3, brewery: "Brewery"});
+      }
+      else {
+        zoomOut();
+        chart.goHome();
+      }
+      previousPolygon = target;
+    });
+    
+    polygonSeries.data.setAll(countryData);
+
+    chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+    chart.chartContainer.get("background").events.on("click", function () {
+      zoomOut();
+      chart.goHome();
+    })
+    chart.appear(1000, 100);
+  }); // end am5.ready()
 </script>
