@@ -448,10 +448,9 @@ p {
     display: inline;
 }
 
-.country-map {
-    position: relative;
-    width: 980px;
-    height: 400px;
+#chartdiv {
+    height: 500px;
+    margin: 0 auto;
 }
 
 a.external:link {
