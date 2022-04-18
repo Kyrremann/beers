@@ -27,7 +27,7 @@ layout: default
 	{% for beer in site.data.beers %}
 	<tr>
 	  <td class="beer">
-	    <a href="https://untappd.com/beer/{{ beer.id }}">{{ beer.name }}</a>
+	    <a class="external" href="https://untappd.com/beer/{{ beer.id }}"  target="_blank" rel="noopener noreferrer">{{ beer.name }}</a>
 	  </td>
 	  <td class="abv">
 	    {{ beer.abv }}
@@ -48,7 +48,7 @@ layout: default
 	    {{ beer.checkin_at }}
 	  </td>
 	  <td class="brewery">
-	    <a href="https://untappd.com/brewery/{{ beer.brewery_id }}">{{ beer.brewery }}</a>
+	    <a class="external" href="https://untappd.com/brewery/{{ beer.brewery_id }}" target="_blank" rel="noopener noreferrer">{{ beer.brewery }}</a>
 	  </td>
 	</tr>
 	{% endfor %}

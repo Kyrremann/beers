@@ -453,3 +453,10 @@ p {
     width: 980px;
     height: 400px;
 }
+
+a.external:link {
+    background-image: url(../assets/Icon_External_Link.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 13px;
+}
