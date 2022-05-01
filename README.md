@@ -17,8 +17,10 @@ It's pretty simple to get started using this application, as it's all hosted by 
 1. Fork this repo
 2. Change `e-mail` in `_config.yml` 
    * The site will be aviable at `<username>.github.io/beers`
-3. Upload your own `untappd.json` data
-4. Github Action will automatically build and upload your new data
+3. Let Github Action push back to the repo by going to the repo `Settings` > `Actions` > `General`, scroll to the bottom. Under `Workflow permissions` make sure that `Read and write permissions` are enabled.
+4. Enable Github Pages by going to the repo `Settings` > `Pages`. Under `Source` click the button that says `None` and choose `Main` (or your custom branch`.
+6. Upload your own `untappd.json` data
+7. Github Action will automatically build and upload your new data
 
 ### Update your fork
 Check out [Github doc](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/merging-an-upstream-repository-into-your-fork) for an easy guide for how to update your fork.
