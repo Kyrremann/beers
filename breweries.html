@@ -20,9 +20,9 @@ layout: default
       <tbody class="list">
 	{% for brewery in site.data.breweries %}
 	<tr>
-	  <td class="brewery">
+	  <td>
       <span class="fi fi-{{ brewery.ISO3166Alpha2 | downcase }}"></span>
-	    <a class="external" href="https://untappd.com/brewery/{{ brewery.id }}" target="_blank" rel="noopener noreferrer">{{ brewery.name }}</a>
+	    <a class="external brewery" href="https://untappd.com/brewery/{{ brewery.id }}" target="_blank" rel="noopener noreferrer">{{ brewery.name }}</a>
 	    <span style="float: right; width: 100%; text-align: right; display: table;">
 		{% assign beers = brewery.beers |  newline_to_br %}
 		{% for beer in beers %}
