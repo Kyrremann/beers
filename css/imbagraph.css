@@ -94,7 +94,6 @@ p {
 .boxes-table {
     border: 1px solid #ddd;
     margin: 0 0.5em 2em;
-    padding: 0 0 3em;
 }
 
 /*
@@ -187,7 +186,6 @@ p {
     border-radius: 2em;
     font-weight: bold;
     position: relative;
-    bottom: -1.5em;
 }
 
 .information-head {

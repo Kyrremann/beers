@@ -23,10 +23,12 @@
 				<li>Venues: {{ data.unique_venues }}</li>
 				<li>Venue countries: {{ data.venue_countries }}</li>
 				<li>Avg per day: {{ data.beers_per_day }}</li>
+				{% if data.month == nil %}
+				<li style="background: #FFFFFF">
+					<a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ data.year }}/">Monthly</a>
+				</li>
+				{% endif %}
 			</ul>
-			{% if data.month == nil %}
-			<a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ data.year }}/">Monthly</a>
-			{% endif %}
 		</div>
 	</div>
 </div>
