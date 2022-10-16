@@ -10,8 +10,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: robinraju/release-downloader@v1.2
+      - uses: actions/checkout@v3
+      - uses: robinraju/release-downloader@v1.5
         with:
           repository: "kyrremann/unparsd"
           latest: true
