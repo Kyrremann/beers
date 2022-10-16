@@ -27,6 +27,6 @@ jobs:
           git config --global user.email "$GITHUB_ACTOR@github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git checkout master
-          git add -A .
+          git add -A ./_data ./_monthly
           git commit -m "ci: Genereated new data"
           git push
