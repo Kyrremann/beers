@@ -20,12 +20,9 @@ jobs:
           chmod +x unparsd
           ./unparsd
       - name: Commit back
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
         run: |
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$GITHUB_ACTOR@github.com"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git add -A ./_data ./_monthly
           git commit -m "ci: Genereated new data" || echo "No changes to commit"
           git push
