@@ -23,12 +23,17 @@ layout: default
 	  <td>
       <span class="fi fi-{{ brewery.ISO3166Alpha2 | downcase }}"></span>
 	    <a class="external brewery" href="https://untappd.com/brewery/{{ brewery.id }}" target="_blank" rel="noopener noreferrer">{{ brewery.name }}</a>
-	    <span style="float: right; width: 100%; text-align: right; display: table;">
+	    <span id="{{ brewery.id }}-beers" style="float: right; text-align: right; display: table;">
+              <button id="{{ brewery.id }}-show" type="button" onClick="toggleShowAll(event)">Show beers</button>
+              <br />
+              <span id="beers" hidden="hidden">
+                <br />
 		{% assign beers = brewery.beers |  newline_to_br %}
 		{% for beer in beers %}
 		  {{ beer }}
 		  <br />
 	  	{% endfor %}
+              </span>
 	    </span>
 	  </td>
 	  <td valign="top" class="checkins">
@@ -50,4 +55,22 @@ layout: default
   };
 
   let breweries = new List("breweries", options);
+
+  function toggleShowAll(event) {
+    const spanID = event.currentTarget.parentElement.getAttribute("id");
+    const span = document.getElementById(spanID);
+    list = span.children[2];
+    if (list.hasAttribute("hidden")) {
+      list.removeAttribute("hidden");
+    } else {
+      list.setAttribute("hidden", "hidden");
+    }
+
+    button = span.children[0];
+    if (button.textContent == "Hide beers") {
+      button.textContent = "Show beers"
+    } else {
+      button.textContent = "Hide beers"
+    }
+  }
 </script>
