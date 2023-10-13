@@ -21,7 +21,7 @@ layout: default
 	{% for brewery in site.data.breweries %}
 	<tr>
 	  <td>
-      <span class="fi fi-{{ brewery.ISO3166Alpha2 | downcase }}"></span>
+            <span class="fi fi-{{ brewery.ISO3166Alpha2 | downcase }}"></span>
 	    <a class="external brewery" href="https://untappd.com/brewery/{{ brewery.id }}" target="_blank" rel="noopener noreferrer">{{ brewery.name }}</a>
 	    <span id="{{ brewery.id }}-beers" style="float: right; text-align: right; display: table;">
               <button id="{{ brewery.id }}-show" type="button" onClick="toggleShowAll(event)">Show beers</button>

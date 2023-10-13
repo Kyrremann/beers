@@ -30,6 +30,16 @@ layout: default
 	      </tr>
       </thead>
       <tbody class="list">
+        {% for country in site.data.countries %}
+        <tr>
+          <td class="name">
+            <span class="fi fi-{{ country.id | downcase }}"></span>
+            {{ country.name }}
+          </td>
+          <td valign="top" class="checkins">{{ country.checkins }}</td>
+          <td valign="top" class="breweries">{{ country.breweries }}</td>
+        </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
@@ -39,11 +49,9 @@ layout: default
 <script>
   let options = {
     valueNames: [ "name", "checkins", "breweries" ],
-    item: '<tr><td class="name"></td><td valign="top" class="checkins"></td><td valign="top" class="breweries"></td></tr>'
   };
 
-  countryData = {{ site.data.countries | jsonify }};
-  countryList = new List("countries", options, countryData);
+  countryList = new List("countries", options);
 
   function zoomOut() {
     countryList.clear();
