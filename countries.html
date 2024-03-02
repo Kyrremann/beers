@@ -51,6 +51,7 @@ layout: default
     valueNames: [ "name", "checkins", "breweries" ],
   };
 
+  countryData = {{ site.data.countries | jsonify }};
   countryList = new List("countries", options);
 
   function zoomOut() {
