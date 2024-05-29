@@ -43,6 +43,8 @@ layout: default
       </tbody>
     </table>
   </div>
+  <h3>Countries left to taste</h3>
+  <p>{{ site.data.missing_countries | map: "name" | join: ", " }}</p>
 </div>
 
 <!-- Chart code -->
