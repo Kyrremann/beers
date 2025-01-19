@@ -22,6 +22,8 @@
 				<li>Brewery countries: {{ data.brewery_countries }}</li>
 				<li>Venues: {{ data.unique_venues }}</li>
 				<li>Venue countries: {{ data.venue_countries }}</li>
+                <li>Most beers in a day: {{ data.most_checkins_per_day.count }} ({{ data.most_checkins_per_day.date }})</li>
+				<li>Most unique in a day: {{ data.most_unique_beers_per_day.count }} ({{ data.most_unique_beers_per_day.date }})</li>
 				<li>Avg per day: {{ data.beers_per_day }}</li>
 				{% if data.month == nil %}
 				<li style="background: #FFFFFF">
