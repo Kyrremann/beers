@@ -14,6 +14,7 @@ layout: default
 <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/ukCountriesLow.js"></script>
 
 <!-- HTML -->
 <div id="chartdiv"></div>
@@ -75,11 +76,31 @@ layout: default
     }));
 
 
-    // Create main polygon series for countries
+    // Map UK nation names (as stored in countries.json) to ukCountriesLow feature IDs
+    var ukNameToId = {
+      "England": "GB-ENG",
+      "Scotland": "GB-SCT",
+      "Wales": "GB-WLS",
+      "Northern Ireland": "GB-NIR"
+    };
+
+    // Split countryData into world countries and UK nations
+    var worldData = [];
+    var ukData = [];
+    countryData.forEach(function(country) {
+      var ukId = ukNameToId[country.name];
+      if (ukId) {
+        ukData.push(Object.assign({}, country, { id: ukId }));
+      } else {
+        worldData.push(country);
+      }
+    });
+
+    // Create main polygon series for countries (exclude Antarctica and GB)
     // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
     var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
       geoJSON: am5geodata_worldLow,
-      exclude: ["AQ"]
+      exclude: ["AQ", "GB"]
     }));
 
     polygonSeries.mapPolygons.template.setAll({
@@ -88,25 +109,38 @@ layout: default
     });
 
     var previousPolygon;
-    polygonSeries.mapPolygons.template.on("active", function (active, target) {
-      if (previousPolygon && previousPolygon != target) {
-        previousPolygon.set("active", false);
-      }
-      if (target.get("active")) {
-        polygonSeries.zoomToDataItem(target.dataItem );
-        // TODO: Show beer had in each country
-        // also need to change the table, probably easier to have two tables
-        //countryList.clear();
-        //countryList.add({name: "Beer", checkins: 3, brewery: "Brewery"});
-      }
-      else {
-        zoomOut();
-        chart.goHome();
-      }
-      previousPolygon = target;
+
+    function bindActiveHandler(series) {
+      series.mapPolygons.template.on("active", function (active, target) {
+        if (previousPolygon && previousPolygon != target) {
+          previousPolygon.set("active", false);
+        }
+        if (target.get("active")) {
+          series.zoomToDataItem(target.dataItem);
+        } else {
+          zoomOut();
+          chart.goHome();
+        }
+        previousPolygon = target;
+      });
+    }
+
+    bindActiveHandler(polygonSeries);
+    polygonSeries.data.setAll(worldData);
+
+    // Create separate polygon series for UK constituent countries
+    var ukSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+      geoJSON: am5geodata_ukCountriesLow,
+      include: ["GB-ENG", "GB-SCT", "GB-WLS", "GB-NIR"]
+    }));
+
+    ukSeries.mapPolygons.template.setAll({
+      tooltipText: "{name}",
+      templateField: "settings"
     });
-    
-    polygonSeries.data.setAll(countryData);
+
+    bindActiveHandler(ukSeries);
+    ukSeries.data.setAll(ukData);
 
     chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
     chart.chartContainer.get("background").events.on("click", function () {
