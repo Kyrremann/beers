@@ -465,3 +465,53 @@ a.external:link {
 .checkins {
   text-align: right;
 }
+
+/* -- ABV BAR CHART -- */
+.abv-section {
+  margin-bottom: 2em;
+}
+
+.abv-section h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.abv-chart {
+  padding: 0 1em;
+}
+
+.abv-bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6em;
+  gap: 0.75em;
+}
+
+.abv-label {
+  min-width: 3.5em;
+  text-align: right;
+  font-size: 0.9em;
+  color: #526066;
+  flex-shrink: 0;
+}
+
+.abv-bar-track {
+  flex: 1;
+  background: #f0f0f0;
+  border-radius: 3px;
+  height: 1.75em;
+}
+
+.abv-bar-fill {
+  height: 100%;
+  background: #c96e12;
+  border-radius: 3px;
+  min-width: 2px;
+}
+
+.abv-count {
+  min-width: 3em;
+  font-size: 0.9em;
+  color: #526066;
+  flex-shrink: 0;
+}

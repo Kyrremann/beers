@@ -7,6 +7,50 @@ layout: default
     "%-dth of %B, %Y" }}, averaging {{ site.data.allmy.beers_per_day }} beers a day</h1>
 </div>
 
+{% assign abv_max = 0 %}
+{% for b in site.data.abv %}
+  {% if b.count > abv_max %}{% assign abv_max = b.count %}{% endif %}
+{% endfor %}
+
+<div class="l-content information abv-section">
+  <h3>Beers by ABV</h3>
+  <div class="abv-chart">
+    {% for b in site.data.abv %}
+    {% assign bar_pct = b.count | times: 100 | divided_by: abv_max %}
+    <div class="abv-bar-row">
+      <span class="abv-label">{{ b.label }}</span>
+      <div class="abv-bar-track">
+        <div class="abv-bar-fill" style="width: {{ bar_pct }}%"></div>
+      </div>
+      <span class="abv-count">{{ b.count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="l-content boxes-tables pure-g">
+  <div class="pure-u-1">
+    <div class="boxes-table">
+      <div class="boxes-table-free">
+        <div class="boxes-table-header">
+          <h2>Longest Streak</h2>
+          <span class="boxes-table-text">
+            {{ site.data.streak.longest }}
+            <span>days</span>
+          </span>
+        </div>
+        <ul class="boxes-table-list">
+          <li>{{ site.data.streak.longest_start | date: "%-d %b %Y" }} – {{ site.data.streak.longest_end | date: "%-d %b %Y" }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-content information">
+  <h3>Yearly stats</h3>
+</div>
+
 <div class="l-content information">
   {% for value in site.data.allmy.years reversed %}
   {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
