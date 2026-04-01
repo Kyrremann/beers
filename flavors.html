@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="banner">
+  <h1 class="banner-head">I have had beers with {{ site.data.flavors | size }} different flavors</h1>
+</div>
+
+<div class="l-content information">
+  <div class="pure-u-1" id="flavors">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
+      <thead>
+	      <tr>
+	        <th class="sort" data-sort="flavor">Flavor</th>
+	        <th>count</th>
+	      </tr>
+      </thead>
+      <tbody class="list">
+        {% for it in site.data.flavors %}
+        <tr>
+          <td class="flavor">
+            {{ it.flavor }}
+          </td>
+          <td valign="top">{{ it.count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
