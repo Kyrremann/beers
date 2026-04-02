@@ -7,16 +7,88 @@ layout: default
 </div>
 
 <div class="l-content information">
-  {{ content }}
+	{% assign abv_max = 0 %}
+	{% for b in site.data.allmy.years[page.year].abv %}
+  {% if b.count > abv_max %}{% assign abv_max = b.count %}{% endif %}
+	{% endfor %}
+
+	<div class="l-content information abv-section">
+		<h3>Beers by ABV</h3>
+		<div class="abv-chart">
+			{% for b in site.data.allmy.years[page.year].abv %}
+			{% assign bar_pct = b.count | times: 100 | divided_by: abv_max %}
+			<div class="abv-bar-row">
+				<span class="abv-label">{{ b.label }}</span>
+				<div class="abv-bar-track">
+					<div class="abv-bar-fill" style="width: {{ bar_pct }}%"></div>
+				</div>
+				<span class="abv-count">{{ b.count }}</span>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	{% assign weekly_max = 0 %}
+	{% for d in site.data.allmy.years[page.year].weekly %}
+  {% if d.count > weekly_max %}{% assign weekly_max = d.count %}{% endif %}
+	{% endfor %}
+
+
+	<div class="l-content information abv-section">
+		<h3>Beers by Day of Week</h3>
+		<div class="abv-chart">
+			{% for d in site.data.allmy.years[page.year].weekly %}
+			{% assign bar_pct = d.count | times: 100 | divided_by: weekly_max %}
+			<div class="abv-bar-row">
+				<span class="abv-label">{{ d.day }}</span>
+				<div class="abv-bar-track">
+					<div class="abv-bar-fill" style="width: {{ bar_pct }}%"></div>
+				</div>
+				<span class="abv-count">{{ d.count }}</span>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="l-content boxes-tables pure-g">
+		<div class="pure-u-1">
+			<div class="boxes-table">
+				<div class="boxes-table-free">
+					<div class="boxes-table-header">
+						<h2>Longest Streak</h2>
+						<span class="boxes-table-text">
+							{{ site.data.allmy.years[page.year].streak.longest }}
+							<span>days</span>
+						</span>
+					</div>
+					<ul class="boxes-table-list">
+						<li>{{ site.data.allmy.years[page.year].streak.longest_start | date: "%-d %b %Y" }} – {{ site.data.allmy.years[page.year].streak.longest_end | date: "%-d %b %Y" }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="l-content information">
+		<h3>Monthly stats</h3>
+	</div>
+
+	{% for value in site.data.allmy.years[page.year].months %}
+  {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
+		{% include infoboxes.html data=value %}
+		{% cycle 'end row' : '', '', '</div>' %}
+	{% endfor %}
+	{% cycle 'end row' : '', '</div>', '</div>' %}
+
 
   {% if page.next %}
-    <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
-      <span class="nav-title nav-title-prev">{{ page.next.title }}</span> &rarr;
-    </a>
+  <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+    <span class="nav-title nav-title-prev">{{ page.next.title }}</span> &rarr;
+  </a>
   {% endif %}
   {% if page.previous %}
-    <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
-      &larr; <span class="nav-title nav-title-next">{{ page.previous.title }}</span>
-    </a>
+  <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+    &larr; <span class="nav-title nav-title-next">{{ page.previous.title }}</span>
+  </a>
   {% endif %}
 </div>

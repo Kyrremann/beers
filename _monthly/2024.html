@@ -1,11 +1,5 @@
 ---
 layout: monthly
 banner: In 2024 I started drinking 3th of January and I managed to drink 337 beers, averaging 0.92 beers a day
+year: "2024"
 ---
-
-{% for value in site.data.allmy.years['2024'].months %}
-  {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
-  {% include infoboxes.html data=value %}
-  {% cycle 'end row' : '', '', '</div>' %}
-{% endfor %}
-{% cycle 'end row' : '', '</div>', '</div>' %}
