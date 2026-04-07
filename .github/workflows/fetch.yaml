@@ -27,15 +27,28 @@ jobs:
           UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
           UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
 
-      - run: |
+      - name: Check for new check-ins
+        id: diff
+        run: |
+          git add checkins/
+          if git diff --staged --quiet; then
+            echo "new=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate statistics
+        if: steps.diff.outputs.new == 'true'
+        run: |
           chmod +x unparsd
           ./unparsd generate -u checkins/
 
       - name: Commit and push
+        if: steps.diff.outputs.new == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add checkins/ _monthly/ _data/
+          git add checkins/ _data/ _monthly/
           if git diff --staged --quiet; then
             echo "No new check-ins to commit"
           else
