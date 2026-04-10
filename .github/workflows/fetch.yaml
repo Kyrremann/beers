@@ -22,7 +22,8 @@ jobs:
 
       - run: |
           chmod +x unparsd
-          ./unparsd fetch -u kyrremann
+          ./unparsd fetch -u kyrremann -o ./checkins/kyrremann
+          ./unparsd fetch -u mk0111   -o ./checkins/marcel
         env:
           UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
           UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
@@ -40,8 +41,8 @@ jobs:
       - name: Generate statistics
         if: steps.diff.outputs.new == 'true'
         run: |
-          chmod +x unparsd
-          ./unparsd generate -u checkins/
+          ./unparsd generate -u ./checkins/kyrremann -o . --username kyrremann
+          ./unparsd generate -u ./checkins/marcel    -o . --username marcel
 
       - name: Commit and push
         if: steps.diff.outputs.new == 'true'

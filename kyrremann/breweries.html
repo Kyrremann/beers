@@ -1,0 +1,79 @@
+---
+layout: default
+user: kyrremann
+---
+
+{% assign ud = site.data[page.user] %}
+
+<div class="banner">
+  <h1 class="banner-head">I have sampled {{ ud.breweries | size }} different breweries</h1>
+</div>
+
+<div class="l-content information">
+  <div class="pure-u-1" id="breweries">
+    <input class="search" placeholder="Filter">
+    <table class="pure-table pure-table-striped" style="width: 100%;">
+      <thead>
+        <tr>
+          <th class="sort" data-sort="brewery">Brewery</th>
+          <th class="sort" data-sort="checkins">Checkins</th>
+          <th class="sort" data-sort="country">Country</th>
+        </tr>
+      </thead>
+      <tbody class="list">
+  {% for brewery in ud.breweries %}
+  <tr>
+    <td>
+          <span class="fi fi-{{ brewery.ISO3166Alpha2 | downcase }}"></span>
+      <a class="external brewery" href="https://untappd.com/brewery/{{ brewery.id }}" target="_blank" rel="noopener noreferrer">{{ brewery.name }}</a>
+      <span id="{{ brewery.id }}-beers" style="float: right; text-align: right; display: table;">
+            <button id="{{ brewery.id }}-show" type="button" onClick="toggleShowAll(event)">Show beers</button>
+            <br />
+            <span id="beers" hidden="hidden">
+              <br />
+      {% assign beers = brewery.beers | newline_to_br %}
+      {% for beer in beers %}
+        {{ beer }}
+        <br />
+      {% endfor %}
+            </span>
+      </span>
+    </td>
+    <td valign="top" class="checkins">
+        {{ brewery.checkins }}
+    </td>
+    <td valign="top" class="country">
+      {{ brewery.country }}
+    </td>
+  </tr>
+  {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  let options = {
+    valueNames: [ "brewery", "checkins", "country" ]
+  };
+
+  let breweries = new List("breweries", options);
+
+  function toggleShowAll(event) {
+    const spanID = event.currentTarget.parentElement.getAttribute("id");
+    const span = document.getElementById(spanID);
+    list = span.children[2];
+    if (list.hasAttribute("hidden")) {
+      list.removeAttribute("hidden");
+    } else {
+      list.setAttribute("hidden", "hidden");
+    }
+
+    button = span.children[0];
+    if (button.textContent == "Hide beers") {
+      button.textContent = "Show beers"
+    } else {
+      button.textContent = "Hide beers"
+    }
+  }
+</script>

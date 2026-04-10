@@ -6,16 +6,18 @@ layout: default
   <h1 class="banner-head">{{ page.banner }}</h1>
 </div>
 
+{% assign ud = site.data[page.user] %}
+
 <div class="l-content information">
 	{% assign abv_max = 0 %}
-	{% for b in site.data.allmy.years[page.year].abv %}
+	{% for b in ud.allmy.years[page.year].abv %}
   {% if b.count > abv_max %}{% assign abv_max = b.count %}{% endif %}
 	{% endfor %}
 
 	<div class="l-content information abv-section">
 		<h3>Beers by ABV</h3>
 		<div class="abv-chart">
-			{% for b in site.data.allmy.years[page.year].abv %}
+			{% for b in ud.allmy.years[page.year].abv %}
 			{% assign bar_pct = b.count | times: 100 | divided_by: abv_max %}
 			<div class="abv-bar-row">
 				<span class="abv-label">{{ b.label }}</span>
@@ -29,7 +31,7 @@ layout: default
 	</div>
 
 	{% assign weekly_max = 0 %}
-	{% for d in site.data.allmy.years[page.year].weekly %}
+	{% for d in ud.allmy.years[page.year].weekly %}
   {% if d.count > weekly_max %}{% assign weekly_max = d.count %}{% endif %}
 	{% endfor %}
 
@@ -37,7 +39,7 @@ layout: default
 	<div class="l-content information abv-section">
 		<h3>Beers by Day of Week</h3>
 		<div class="abv-chart">
-			{% for d in site.data.allmy.years[page.year].weekly %}
+			{% for d in ud.allmy.years[page.year].weekly %}
 			{% assign bar_pct = d.count | times: 100 | divided_by: weekly_max %}
 			<div class="abv-bar-row">
 				<span class="abv-label">{{ d.day }}</span>
@@ -57,12 +59,12 @@ layout: default
 					<div class="boxes-table-header">
 						<h2>Longest Streak</h2>
 						<span class="boxes-table-text">
-							{{ site.data.allmy.years[page.year].streak.longest }}
+							{{ ud.allmy.years[page.year].streak.longest }}
 							<span>days</span>
 						</span>
 					</div>
 					<ul class="boxes-table-list">
-						<li>{{ site.data.allmy.years[page.year].streak.longest_start | date: "%-d %b %Y" }} – {{ site.data.allmy.years[page.year].streak.longest_end | date: "%-d %b %Y" }}</li>
+						<li>{{ ud.allmy.years[page.year].streak.longest_start | date: "%-d %b %Y" }} – {{ ud.allmy.years[page.year].streak.longest_end | date: "%-d %b %Y" }}</li>
 					</ul>
 				</div>
 			</div>
@@ -73,7 +75,7 @@ layout: default
 		<h3>Monthly stats</h3>
 	</div>
 
-	{% for value in site.data.allmy.years[page.year].months %}
+	{% for value in ud.allmy.years[page.year].months %}
   {% cycle 'add row' : '<div class="boxes-tables pure-g">', '', '' %}
 		{% include infoboxes.html data=value %}
 		{% cycle 'end row' : '', '', '</div>' %}
@@ -81,12 +83,12 @@ layout: default
 	{% cycle 'end row' : '', '</div>', '</div>' %}
 
 
-  {% if page.next %}
+  {% if page.next and page.next.user == page.user %}
   <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
     <span class="nav-title nav-title-prev">{{ page.next.title }}</span> &rarr;
   </a>
   {% endif %}
-  {% if page.previous %}
+  {% if page.previous and page.previous.user == page.user %}
   <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
     &larr; <span class="nav-title nav-title-next">{{ page.previous.title }}</span>
   </a>

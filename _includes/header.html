@@ -12,21 +12,26 @@
   <div class="pure-u-1 pure-u-md-1-3">
     <div class="pure-menu pure-menu-horizontal custom-can-transform">
       <ul class="pure-menu-list">
+        {% if page.user %}
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ '/beers' | prepend: site.baseurl }}">Beers</a>
+	  <a class="pure-menu-link" href="{{ site.baseurl }}/">Home</a>
 	</li>
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ '/breweries' | prepend: site.baseurl }}">Breweries</a>
+	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/beers' | prepend: site.baseurl }}">Beers</a>
 	</li>
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ '/countries' | prepend: site.baseurl }}">Countries</a>
+	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/breweries' | prepend: site.baseurl }}">Breweries</a>
 	</li>
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ '/styles' | prepend: site.baseurl }}">Styles</a>
+	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/countries' | prepend: site.baseurl }}">Countries</a>
 	</li>
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ '/flavors' | prepend: site.baseurl }}">Flavors</a>
+	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/styles' | prepend: site.baseurl }}">Styles</a>
 	</li>
+	<li class="pure-menu-item">
+	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/flavors' | prepend: site.baseurl }}">Flavors</a>
+	</li>
+        {% endif %}
       </ul>
     </div>
   </div>
