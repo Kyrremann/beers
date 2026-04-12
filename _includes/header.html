@@ -14,7 +14,7 @@
       <ul class="pure-menu-list">
         {% if page.user %}
 	<li class="pure-menu-item">
-	  <a class="pure-menu-link" href="{{ site.baseurl }}/">Home</a>
+	  <a class="pure-menu-link" href="{{ site.baseurl | append: '/' | append: page.user }}">Home</a>
 	</li>
 	<li class="pure-menu-item">
 	  <a class="pure-menu-link" href="{{ '/' | append: page.user | append: '/beers' | prepend: site.baseurl }}">Beers</a>
