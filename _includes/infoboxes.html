@@ -27,7 +27,7 @@
 				<li>Avg per day: {{ data.beers_per_day }}</li>
 				{% if data.month == nil %}
 				<li style="background: #FFFFFF">
-					<a class="button-choose pure-button" href="{{ site.baseurl }}/monthly/{{ page.user }}/{{ data.year }}/">Monthly</a>
+					<a class="button-choose pure-button" href="{{ site.baseurl }}/{{ page.user }}/monthly/{{ data.year }}/">Monthly</a>
 				</li>
 				{% endif %}
 			</ul>
