@@ -2,7 +2,8 @@ name: Fetch check-ins
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # 06:00 UTC every morning
+    - cron: '42 5 * * *'  # 05:42 every morning
+      timezone: "Europe/Oslo"
   workflow_dispatch:      # allow manual trigger
 
 permissions:
