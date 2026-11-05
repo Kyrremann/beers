@@ -2,9 +2,9 @@ name: Fetch check-ins
 
 on:
   schedule:
-    - cron: '42 5 * * *'  # 05:42 every morning
+    - cron: '42 5 * * *' # 05:42 every morning
       timezone: "Europe/Oslo"
-  workflow_dispatch:      # allow manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,9 +13,9 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v7
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # ratchet:actions/setup-go@v7
         with:
           go-version: stable
 
