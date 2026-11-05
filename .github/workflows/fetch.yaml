@@ -21,9 +21,12 @@ jobs:
 
       - run: go install github.com/kyrremann/unparsd/v4@latest
 
-      - run: |
-          unparsd fetch -u kyrremann -o ./checkins/kyrremann
-          unparsd fetch -u mk0111   -o ./checkins/marcel
+      - run: unparsd fetch -u kyrremann -o ./checkins/kyrremann
+        env:
+          UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
+          UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
+
+      - run: unparsd fetch -u mk0111 -o ./checkins/marcel
         env:
           UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
           UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
